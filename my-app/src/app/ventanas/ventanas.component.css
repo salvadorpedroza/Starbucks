@@ -2,8 +2,35 @@
     display: block;
 }
 
+.headown{
+    width: 100%;
+    height: 10%;
+    background: #fff;
+    /*background: #023f26;*/
+}
+
+.titulo{
+    font-size: 1em;
+    margin-left: 1px;
+    margin-top: 0;
+    /* margin-bottom: 5px; */
+    color: #023f26;
+}
+
 .linea{
     width: 100%;
-    height: 20px;
-    background: #00460a;
+    height: 6px;
+    background: #023f26;
+}
+
+.pospromo{
+    position: absolute;
+    right: 5%;
+    bottom: 7%;
+}
+
+.logo{
+    height: 80%;
+    margin-left: 2%;
+    margin-top: 2px;
 }

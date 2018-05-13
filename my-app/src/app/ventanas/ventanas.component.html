@@ -1,6 +1,11 @@
-<div [hidden]="!mostrar_promociones">
+<div class="headown">
   <div class="linea"></div>
-  <div class="card" style="margin:0">
+  <img src="../../assets/images/sb.png"  class="logo">
+  <label class="titulo">Starbucks </label>
+  
+</div>
+<div [hidden]="!mostrar_promociones" style="height:90%">
+  <div class="card" style="height:100%; margin:0">
   <ngb-carousel *ngIf="images">
   <ng-template ngbSlide>
     <img [src]="images[0]" alt="Random first slide">
@@ -25,7 +30,7 @@
 </ngb-carousel>
 
 <div>
-  <a href="productos" class="button2 special2" (click)="seleccion()"  >COMENZAR</a>
+  <a href="productos" class="button2 special2 pospromo"  (click)="seleccion()"  >COMENZAR</a>
   
 </div>
 
@@ -35,7 +40,7 @@
 </div>
 
 
-<div style="width:100%; height:100%" [hidden]="!mostrar_inicio" >
+<div style="width:100%; height:90%" [hidden]="!mostrar_inicio" >
 <div class="landing scrollhide">
   <div id="page-wrapper">
 
@@ -69,7 +74,7 @@
 
 
 
-<div [hidden]="!mostrar_seleccion">
+<div  style="height:90%" [hidden]="!mostrar_seleccion">
 
 <!-- el codigo de seleccionar comida o bebida-->
 
