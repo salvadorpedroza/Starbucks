@@ -1,0 +1,76 @@
+<div [hidden]="!mostrar_promociones">
+  <div class="linea"></div>
+  <div class="card" style="margin:0">
+  <ngb-carousel *ngIf="images">
+  <ng-template ngbSlide>
+    <img [src]="images[0]" alt="Random first slide">
+    <div class="carousel-caption">
+      </div>
+  </ng-template>
+  
+  <ng-template ngbSlide>
+    <img [src]="images[1]" alt="Random second slide">
+    <div class="carousel-caption">
+      </div>
+  </ng-template>
+  <!--
+  <ng-template ngbSlide>
+    <img [src]="images[2]" alt="Random third slide">
+    <div class="carousel-caption">
+      <h3>Third slide label</h3>
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </div>
+  </ng-template>
+-->
+</ngb-carousel>
+
+<div>
+  <a href="productos" class="button2 special2" (click)="seleccion()"  >COMENZAR</a>
+  
+</div>
+
+
+
+</div>
+</div>
+
+
+<div style="width:100%; height:100%" [hidden]="!mostrar_inicio" >
+<div class="landing scrollhide">
+  <div id="page-wrapper">
+
+    <header id="header" class="alt"> 	
+
+      <h1><a href="index.html">Inicio </a></h1>
+    </header>
+
+    <section id="banner">
+      <div class="divfull">
+        <div class="inner poscomenzar2">
+          <h2>STARBUCKS</h2>
+          <p>Si tu cafe no es perfecto<br />
+          es por que no estas en<br />
+          STARBUCKS.</p>
+          <ul class="actions">
+            <li><a href="ventanas" class="scrolly button special">PROMOCIONES</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <ul class="actions">
+            <li class="poscomenzar"><a href="productos" class="button2 special2" (click)="seleccion()"  >COMENZAR</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+</div>
+</div>
+</div>
+
+
+
+<div [hidden]="!mostrar_seleccion">
+
+<!-- el codigo de seleccionar comida o bebida-->
+
+</div>
