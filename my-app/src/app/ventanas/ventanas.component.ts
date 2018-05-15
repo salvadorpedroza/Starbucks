@@ -9,8 +9,8 @@ import {NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
 })
 export class ventanasComponent implements OnInit {
   images : string[];
-  mostrar_promociones = true;
-  mostrar_inicio = false;
+  mostrar_promociones = false;
+  mostrar_inicio = true;
   mostrar_seleccion = false;
   nbebidas=0;
   
@@ -29,7 +29,12 @@ export class ventanasComponent implements OnInit {
     this.mostrar_promociones = false;
     this.mostrar_inicio = false;
     this.mostrar_seleccion = true;
-    
+  }
+
+  promociones(){
+    this.mostrar_promociones = true;
+    this.mostrar_inicio = false;
+    this.mostrar_seleccion = false; 
   }
 
 

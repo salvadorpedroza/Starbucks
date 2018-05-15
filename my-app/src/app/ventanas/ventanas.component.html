@@ -1,37 +1,37 @@
-<div class="headown">
-  <div class="linea"></div>
-  <img src="../../assets/images/sb.png"  class="logo">
-  <label class="titulo">Starbucks </label>
-  
-</div>
-<div [hidden]="!mostrar_promociones" style="height:90%">
-  <div class="card" style="height:100%; margin:0">
-  <ngb-carousel *ngIf="images">
-  <ng-template ngbSlide>
-    <img [src]="images[0]" alt="Random first slide">
-    <div class="carousel-caption">
-      </div>
-  </ng-template>
-  
-  <ng-template ngbSlide>
-    <img [src]="images[1]" alt="Random second slide">
-    <div class="carousel-caption">
-      </div>
-  </ng-template>
-  <!--
-  <ng-template ngbSlide>
-    <img [src]="images[2]" alt="Random third slide">
-    <div class="carousel-caption">
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+<div [hidden]="!mostrar_promociones" style="height:100%">
+  <div class="headown">
+      <div class="linea"></div>
+      <img src="../../assets/images/sb.png"  class="logo">
+      <label class="titulo">Starbucks </label>
+      
     </div>
-  </ng-template>
+<div class="card" style="height:90%; margin:0">
+<ngb-carousel *ngIf="images">
+<ng-template ngbSlide>
+  <img [src]="images[0]" alt="Random first slide">
+  <div class="carousel-caption">
+    </div>
+</ng-template>
+
+<ng-template ngbSlide>
+  <img [src]="images[1]" alt="Random second slide">
+  <div class="carousel-caption">
+    </div>
+</ng-template>
+<!--
+<ng-template ngbSlide>
+  <img [src]="images[2]" alt="Random third slide">
+  <div class="carousel-caption">
+    <h3>Third slide label</h3>
+    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+  </div>
+</ng-template>
 -->
 </ngb-carousel>
 
 <div>
-  <a href="productos" class="button2 special2 pospromo"  (click)="seleccion()"  >COMENZAR</a>
-  
+<a href="productos" class="button2 special2 pospromo"  (click)="seleccion()"  >COMENZAR</a>
+
 </div>
 
 
@@ -57,14 +57,12 @@
           es por que no estas en<br />
           STARBUCKS.</p>
           <ul class="actions">
-            <li><a href="ventanas" class="scrolly button special">PROMOCIONES</a></li>
+            <li><a (click)="promociones()"  class="scrolly button special">PROMOCIONES</a></li>
           </ul>
         </div>
         
         <div>
-          <ul class="actions">
-            <li class="poscomenzar"><a href="productos" class="button2 special2" (click)="seleccion()"  >COMENZAR</a></li>
-          </ul>
+          <a class="button2 special2" (click)="seleccion()"  >COMENZAR</a>
         </div>
       </div>
     </section>
