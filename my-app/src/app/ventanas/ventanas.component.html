@@ -18,6 +18,13 @@
   <div class="carousel-caption">
     </div>
 </ng-template>
+
+<ng-template ngbSlide>
+  <img [src]="images[2]" alt="Random second slide">
+  <div class="carousel-caption">
+    </div>
+</ng-template>
+
 <!--
 <ng-template ngbSlide>
   <img [src]="images[2]" alt="Random third slide">
@@ -30,7 +37,7 @@
 </ngb-carousel>
 
 <div>
-<a href="productos" class="button2 special2 pospromo"  (click)="seleccion()"  >COMENZAR</a>
+<a class="button2 special2 pospromo"  (click)="seleccion()">COMENZAR</a>
 
 </div>
 
@@ -72,8 +79,29 @@
 
 
 
-<div  style="height:90%" [hidden]="!mostrar_seleccion">
+<div  style="height:100%" [hidden]="!mostrar_seleccion">
+  <div class="headown">
+    <div class="linea"></div>
+    <img src="../../assets/images/sb.png"  class="logo">
+    <label class="titulo">Starbucks </label>
+    
+  </div>
+  <div style="height:90%; width:100%;" class="divseleccion">
+    <div class="divupselect">
+      <h4>Productos </h4>
+      <h5> ¡Nuestro momento favorito: verte!</h5>
+        </div>
+    <div class="divdownselect">
+      <div class="divcenterselect">
+        <div class="card">
+            <a class="button2 special2 posbutonbebidas" (click)="seleccion()"  >Bebidas</a>
+            <a class="button2 special2 posbutonalimentos" (click)="seleccion()"  >Alimentos</a>
+        <img style="border-radius: 6px;" src="../../assets/images/elige2.png">
+      </div>
+      </div>
+    </div>
 
+</div>
 <!-- el codigo de seleccionar comida o bebida-->
 
 </div>

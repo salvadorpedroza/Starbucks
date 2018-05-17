@@ -6,6 +6,7 @@
     width: 100%;
     height: 10%;
     background: #fff;
+    
     /*background: #023f26;*/
 }
 
@@ -33,4 +34,21 @@
     height: 80%;
     margin-left: 2%;
     margin-top: 2px;
+}
+
+.divseleccion{
+    background: rgb(238, 237, 236);
+}
+
+.divupselect{
+    height: 15%;
+}
+
+.divdownselect{
+    height: 83%;
+}
+
+.divcenterselect{
+    width: 50%;
+    margin-left: 10%;   
 }

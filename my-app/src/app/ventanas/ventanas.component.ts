@@ -19,7 +19,7 @@ export class ventanasComponent implements OnInit {
     
     this.images[0]= "../../assets/images/promo1.jpg";
     this.images[1]="../../assets/images/promo2.PNG";
-    this.images[2]="../../assets/images/promo3.jpg";
+    this.images[2]="../../assets/images/promo3.png";
    }
 
   ngOnInit() {
