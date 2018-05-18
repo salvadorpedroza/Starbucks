@@ -49,6 +49,44 @@
 }
 
 .divcenterselect{
-    width: 50%;
-    margin-left: 10%;   
+    width: 55%;
+    margin-left: 5%;
+    float: left;  
+}
+
+.posbutonbebidas{
+    position: relative;
+    left: 30px;
+    top: 400px;
+}
+
+.newst{
+    width: 70%;
+    height: 7em;
+    margin-top: 1em;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.divbtn{
+    float: right;
+    width: 30%;
+    padding-top: 60px;
+}
+
+.posbutonalimentos{
+    position: relative;
+    left: 190px;
+    top: 400px;
+    width: 200px;
+    background-color: transparent;
+    color: black;
+    border: 2px solid #fff; 
+}
+
+.sth2{
+    color: #023f26;
+    /* text-align: center; */
+    padding-top: 1em;
+    padding-left: 3em;
 }

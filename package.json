@@ -17,6 +17,7 @@
     "cors": "^2.8.4",
     "express": "^4.16.3",
     "jslinq": "^1.0.21",
+    "mongodb": "^3.1.0-beta4",
     "node-fetch": "^2.1.2",
     "redis": "^2.8.0",
     "request": "^2.85.0"

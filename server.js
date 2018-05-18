@@ -2,6 +2,7 @@ const express = require("express");
 const path = require("path");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+const MongoClient = require("mongodb").MongoClient;
 
 const bulldozer = express();
 
@@ -9,6 +10,18 @@ const port = 3015;
 
 //const yammerController = require("./controllers/yammer-controller");
 const twitterController = require("./controllers/controller");
+
+var url = 'mongodb://192.168.237.128:27017/db1';
+
+MongoClient.connect(url,{ useNewUrlParser: true }, function(err, db) {
+  if(!err) {
+    console.log("We are connected");
+  }else{
+    console.log(err.message);
+  }
+
+});
+
 
 bulldozer.use(cors());
 
