@@ -12,6 +12,9 @@ export class ventanasComponent implements OnInit {
   mostrar_promociones = false;
   mostrar_inicio = true;
   mostrar_seleccion = false;
+  mostrar_bebidas = false;
+  mostrar_alimentos = false;
+  
   nbebidas=0;
   
   constructor() {
@@ -25,17 +28,35 @@ export class ventanasComponent implements OnInit {
   ngOnInit() {
   }
 
-  seleccion(){
+  reset(){
     this.mostrar_promociones = false;
     this.mostrar_inicio = false;
+    this.mostrar_seleccion = false; 
+    this.mostrar_bebidas = false;
+  }
+  inicio(){
+    this.reset()
+    this.mostrar_inicio = true;
+  }
+
+  seleccion(){
+    this.reset()
     this.mostrar_seleccion = true;
   }
 
   promociones(){
+    this.reset()
     this.mostrar_promociones = true;
-    this.mostrar_inicio = false;
-    this.mostrar_seleccion = false; 
   }
 
+  bebidas(){
+    this.reset()
+    this.mostrar_bebidas = true;
+  }
+
+  alimentos(){
+    this.reset()
+    this.mostrar_alimentos = true;
+  }
 
 }

@@ -19,7 +19,6 @@ MongoClient.connect(url,{ useNewUrlParser: true }, function(err, db) {
   }else{
     console.log(err.message);
   }
-
 });
 
 

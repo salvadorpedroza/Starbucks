@@ -77,8 +77,6 @@
 </div>
 </div>
 
-
-
 <div  style="height:100%" [hidden]="!mostrar_seleccion">
   <div class="headown">
     <div class="linea"></div>
@@ -99,13 +97,46 @@
       </div>
       </div>
       <div class="divbtn">
-          <a class="button2 special2 newst" (click)="seleccion()"  >Bebidas</a>
-          <a class="button2 special2 newst" (click)="seleccion()"  >Alimentos</a>
-          <a class="button2 special2 newst" (click)="seleccion()"  >Inicio</a>
+          <a class="button2 special2 newst" (click)="bebidas()"  >Bebidas</a>
+          <a class="button2 special2 newst" (click)="alimentos()"  >Alimentos</a>
+          <a class="button2 special2 newst" (click)="inicio()"  >Inicio</a>
       </div>
     </div>
 
 </div>
-<!-- el codigo de seleccionar comida o bebida-->
 
 </div>
+
+
+<div style="height:100%" [hidden]="!mostrar_bebidas">
+    <div class="headown">
+        <div class="linea"></div>
+        <img src="../../assets/images/sb.png"  class="logo">
+        <label class="titulo">Starbucks </label>
+        
+      </div>
+      <div style="height:90%; width:100%;" class="divseleccion">
+        
+        
+        <!-- AQUI PON EL CODIGO DE BEBIDAS-->
+
+
+      </div>
+</div>
+
+<div style="height:100%" [hidden]="!mostrar_alimentos">
+    <div class="headown">
+        <div class="linea"></div>
+        <img src="../../assets/images/sb.png"  class="logo">
+        <label class="titulo">Starbucks </label>
+        
+      </div>
+      <div style="height:90%; width:100%;" class="divseleccion">
+
+        <!-- AQUI PON EL CODIGO DE ALIMENTOS-->
+
+      </div>
+</div>
+
+
+
