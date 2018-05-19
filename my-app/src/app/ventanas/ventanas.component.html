@@ -111,29 +111,684 @@
 
 
 <div style="height:100%" [hidden]="!mostrar_bebidas">
-    <div class="headown">
-        <div class="linea"></div>
-        <img src="../../assets/images/sb.png"  class="logo">
-        <label class="titulo">Starbucks </label>
-        
-      </div>
-      <div style="height:90%; width:100%;" class="divseleccion">
-                
-        <!-- AQUI PON EL CODIGO DE BEBIDAS-->
 
+  <div class="headown">
+      <div class="linea"></div>
+      <img src="../../assets/images/sb.png"  class="logo">
+      <label class="titulo">Starbucks </label>
+      
+    </div>
+    <div style="height:90%; width:100%;" class="divseleccion">
+      <div class="cards-placeholder">
+        <div class="cards-placeholder__item"></div>
+        <div class="cards-placeholder__item"></div>
+        <div class="cards-placeholder__item"></div>
       </div>
+      <div class="wrapper" style="height: 90%;">
+         
+          <a class="button2 special2 "style="position: absolute; left: 95px;
+          top: 535px;  "(click)="seleccion()"  >Regresar</a>
+        
+
+        <!-- primera carta -->
+        <div class="carta card--19">
+          <div class="card__header card__header--19">
+            <div class="card__watermark" data-watermark=""></div>
+  
+            
+  
+            <span class="card__price card__will-animate"></span>
+  
+            <h1 class="card__title card__will-animate">Café</h1>
+            <span class="card__subtitle card__will-animate">Es simplemente perfecto para consentirte, porque sabemos que después de un día lleno de mucha actividad, el Café Moka Blanco es el mejor para relajarte y disfrutar.</span>
+  
+          </div>
+  
+          <div class="card__body">
+            <img src="../../assets/images/cafe2.png" alt="Nike 19" class="card__image card__will-animate">
+            <a class="card__wish-list card__wish-list--solstice card__will-animate" (click)="cafes()">Elegir</a>
+  
+            <span class="card__category card__will-animate"></span>
+          </div>
+        </div>
+       
+  
+        <!-- Nike Solstice -->
+        <div class="carta card--solstice">
+          <div class="card__header card__header--solstice">
+            <div class="card__watermark" data-watermark=""></div>
+  
+           
+  
+            <span class="card__price card__will-animate"></span>
+  
+            <h1 class="card__title card__will-animate">Té</h1>
+            <span class="card__subtitle card__will-animate">Es simplemente perfecto para consentirte, porque sabemos que después de un día lleno de mucha actividad, el Café Latte es el mejor para relajarte y disfrutar</span>
+  
+          </div>
+  
+          <div class="card__body">
+            <img src="../../assets/images/te2.png" alt="Nike Solstice" class="card__image card__will-animate">
+            <a class="card__wish-list card__wish-list--solstice card__will-animate" (click)="tees()">Elegir</a>
+          </div>
+        </div>
+  
+        
+        <div class="carta card--huarache">
+          <div class="card__header card__header--huarache">
+            <div class="card__watermark" data-watermark=""></div>
+  
+            
+  
+            <span class="card__price card__will-animate"></span>
+  
+            <h1 class="card__title card__will-animate">Frapuccino</h1>
+            <span class="card__subtitle card__will-animate">The Nike Air Huarache Utility Men's Shoe toughens up a famous running shoe with a nylon upper, fused mudguard and vibrant detail.</span>
+  
+          </div>
+  
+          <div class="card__body">
+            <img src="../../assets/images/frapuccino.png" alt="Nike Huarache" class="card__image2 card__will-animate">
+            <a class="card__wish-list card__wish-list--solstice card__will-animate" (click)="frapes()">Elegir</a>
+          </div>
+        </div> 
+  
+         
+      </div> 
+    </div>
 </div>
 
 <div style="height:100%" [hidden]="!mostrar_alimentos">
-    <div class="headown">
-        <div class="linea"></div>
-        <img src="../../assets/images/sb.png"  class="logo">
-        <label class="titulo">Starbucks </label>
+  <div class="headown">
+      <div class="linea"></div>
+      <img src="../../assets/images/sb.png"  class="logo">
+      <label class="titulo">Starbucks </label>
+      
+    </div>
+    <div style="height:90%; width:100%;" class="divseleccion">
+
+      <div class="cards-placeholder">
+        <div class="cards-placeholder__item"></div>
+        <div class="cards-placeholder__item"></div>
+      </div>
+      <div class="wrapper" style="height: 90%;">
+  
+          <a class="button2 special2 "style="position: absolute; left: 95px;
+          top: 535px;  "(click)="seleccion()"  >Regresar</a>
+
+        <!-- primera carta -->
+        <div class="carta card--19" style="webkit-box-shadow: none;">
+          <div class="card__header card__header--19">
+            <div class="card__watermark" data-watermark=""></div>
+  
+            
+  
+            <span class="card__price card__will-animate"></span>
+  
+            <h1 class="card__title card__will-animate">Desayunos</h1>
+            <span class="card__subtitle card__will-animate">Es simplemente perfecto para consentirte, porque sabemos que después de un día lleno de mucha actividad, el Café Moka Blanco es el mejor para relajarte y disfrutar.</span>
+  
+          </div>
+  
+          <div class="card__body">
+            <img src="../../assets/images/panini.png" alt="Nike 19" class="card__image4 card__will-animate">
+            <a class="card__wish-list card__wish-list--solstice card__will-animate" (click)="desayunos()">Elegir</a>
+  
+            <span class="card__category card__will-animate"></span>
+          </div>
+        </div>
+       
+  
+        <!-- Nike Solstice -->
+        <div class="carta card--solstice" style="webkit-box-shadow: none;">
+          <div class="card__header card__header--solstice">
+            <div class="card__watermark" data-watermark=""></div>
+  
+            
+  
+            <span class="card__price card__will-animate"></span>
+  
+            <h1 class="card__title card__will-animate">Panaderia</h1>
+            <span class="card__subtitle card__will-animate">Es simplemente perfecto para consentirte, porque sabemos que después de un día lleno de mucha actividad, el Café Latte es el mejor para relajarte y disfrutar</span>
+  
+          </div>
+  
+          <div class="card__body">
+            <img src="../../assets/images/Croissant.png" alt="Nike Solstice" class="card__image3 card__will-animate">
+            <a class="card__wish-list card__wish-list--solstice card__will-animate" (click)="panaderia()">Elegir</a>
+  
+            <span class="card__category card__will-animate"></span>
+          </div>
+        </div>
+  
         
+        <div class="carta card--huarache " style="webkit-box-shadow: none;">
+          <div class="card__header card__header--huarache">
+            <div class="card__watermark" data-watermark=""></div>
+  
+            
+  
+            <span class="card__price card__will-animate"></span>
+  
+            <h1 class="card__title card__will-animate">Antojos</h1>
+            <span class="card__subtitle card__will-animate">The Nike Air Huarache Utility Men's Shoe toughens up a famous running shoe with a nylon upper, fused mudguard and vibrant detail.</span>
+  
+          </div>
+  
+          <div class="card__body">
+            <img src="../../assets/images/galleta.png" alt="Nike Huarache" class="card__image5 card__will-animate">
+            <a class="card__wish-list card__wish-list--solstice card__will-animate" (click)="antojos()">Elegir</a>
+          </div>
+        </div> 
+  
+         
+      </div> 
+
+    </div>
+</div>
+<div  style="height:100%" [hidden]="!mostrar_tees">
+  <div class="headown">
+    <div class="linea"></div>
+        <img src="../../assets/images/sb.png"  class="logo">
+          <label class="titulo">Starbucks </label>
+    
+  </div>
+  <div style="height:90%; width:100%;" class="divseleccion">    
+    <div class="cards-placeholder">
+      <div class="cards-placeholder__item"></div>
+      <div class="cards-placeholder__item"></div>
+    </div>
+    <div class="wrapper"  style="height: 90%;">
+        
+        <a class="button2 special2 "style="position: absolute; left: 95px;
+        top: 535px;  "(click)="seleccion()"  >Regresar</a>
+
+        <a class="button2 special2 "style="position: absolute; left: 95px;
+        top: 535px;  "(click)="seleccion()"  >Regresar</a>
+
+      <!-- primera carta -->
+      <div class="carta card--19">
+        <div class="card__header card__header--19">
+          <div class="card__watermark" data-watermark=""></div>
+
+         
+
+          <span class="card__price card__will-animate"></span>
+
+          <h1 class="card__title card__will-animate">Peach Green Tea Lemonade</h1>
+          <span class="card__subtitle card__will-animate"> Es una variante del café con leche. Como éste, suele llevar un tercio de expreso y dos tercios de leche vaporizada, pero se añade una parte de chocolate, normalmente en forma de jarabe de chocolate.</span>
+
+        </div>
+
+        <div class="card__body">
+          <img src="../../assets/images/otro.png" alt="Nike 19" class="card__image6 card__will-animate">
+          <a class="card__wish-list card__wish-list--solstice card__will-animate" (click)="vasos()">Elegir</a>
+
+          <span class="card__category card__will-animate"></span>
+        </div>
+      </div>
+     
+
+      <!-- Nike Solstice -->
+      <div class="carta card--solstice">
+        <div class="card__header card__header--solstice">
+          <div class="card__watermark" data-watermark=""></div>
+
+          
+
+          <span class="card__price card__will-animate"></span>
+
+          <h1 class="card__title card__will-animate">Strawberry Green Tea Lemonade</h1>
+          <span class="card__subtitle card__will-animate">Es una bebida nacida en Italia, preparada con café expreso y leche montada con vapor para crear la espuma, que en ocasiones lleva también cacao o canela en polvo.</span>
+
+        </div>
+
+        <div class="card__body">
+          <img src="../../assets/images/red.png" alt="Nike Solstice" class="card__image7 card__will-animate">
+          <a class="card__wish-list card__wish-list--solstice card__will-animate" (click)="vasos()">Elegir</a>
+
+          <span class="card__category card__will-animate"></span>
+        </div>
+      </div>
+
+      
+      <div class="carta card--huarache">
+        <div class="card__header card__header--huarache">
+          <div class="card__watermark" data-watermark=""></div>
+
+          
+
+          <span class="card__price card__will-animate"></span>
+
+          <h1 class="card__title card__will-animate">Mint Blend</h1>
+          <span class="card__subtitle card__will-animate">Los mejores ingredientes merecen los mejores utensilios. Nosotros estamos convencidos de que si algo necesario no se puede obtener hecho, hay que crearlo.s</span>
+
+        </div>
+
+        <div class="card__body">
+          <img src="../../assets/images/green.png" alt="Nike Huarache" class="card__image8 card__will-animate">
+          <a class="card__wish-list card__wish-list--solstice card__will-animate" (click)="vasos()">Elegir</a>
+        </div>
+      </div> 
+  </div>
+</div>
+</div>
+
+<div  style="height:100%" [hidden]="!mostrar_frapes">
+  <div class="headown">
+    <div class="linea"></div>
+        <img src="../../assets/images/sb.png"  class="logo">
+          <label class="titulo">Starbucks </label>
+    
+  </div>
+  <div style="height:90%; width:100%;" class="divseleccion">    
+    <div class="cards-placeholder">
+      <div class="cards-placeholder__item"></div>
+      <div class="cards-placeholder__item"></div>
+    </div>
+    <div class="wrapper"  style="height: 90%;">
+
+        <a class="button2 special2 "style="position: absolute; left: 95px;
+        top: 535px;  "(click)="seleccion()"  >Regresar</a>
+
+
+      <!-- primera carta -->
+      <div class="carta card--19">
+        <div class="card__header card__header--19">
+          <div class="card__watermark" data-watermark=""></div>
+
+          
+
+          <span class="card__price card__will-animate"></span>
+
+          <h1 class="card__title card__will-animate">Cafe</h1>
+          <span class="card__subtitle card__will-animate"> Es una variante del café con leche. Como éste, suele llevar un tercio de expreso y dos tercios de leche vaporizada, pero se añade una parte de chocolate, normalmente en forma de jarabe de chocolate.</span>
+
+        </div>
+
+        <div class="card__body">
+          <img src="../../assets/images/cafefrapuccino.png" alt="Nike 19" class="card__image12 card__will-animate">
+          <a class="card__wish-list card__wish-list--solstice card__will-animate" (click)="vasos()">Elegir</a>
+
+          <span class="card__category card__will-animate"></span>
+        </div>
+      </div>
+     
+
+      <!-- Nike Solstice -->
+      <div class="carta card--solstice">
+        <div class="card__header card__header--solstice">
+          <div class="card__watermark" data-watermark=""></div>
+
+          
+
+          <span class="card__price card__will-animate"></span>
+
+          <h1 class="card__title card__will-animate">Cajeta</h1>
+          <span class="card__subtitle card__will-animate">Es una bebida nacida en Italia, preparada con café expreso y leche montada con vapor para crear la espuma, que en ocasiones lleva también cacao o canela en polvo.</span>
+
+        </div>
+
+        <div class="card__body">
+          <img src="../../assets/images/cajeta.png" alt="Nike Solstice" class="card__image13 card__will-animate">
+          <a class="card__wish-list card__wish-list--solstice card__will-animate" (click)="vasos()">Elegir</a>
+
+          <span class="card__category card__will-animate"></span>
+        </div>
+      </div>
+
+      
+      <div class="carta card--huarache">
+        <div class="card__header card__header--huarache">
+          <div class="card__watermark" data-watermark=""></div>
+
+          
+
+          <span class="card__price card__will-animate"></span>
+
+          <h1 class="card__title card__will-animate">Chip</h1>
+          <span class="card__subtitle card__will-animate">Los mejores ingredientes merecen los mejores utensilios. Nosotros estamos convencidos de que si algo necesario no se puede obtener hecho, hay que crearlo.s</span>
+
+        </div>
+
+        <div class="card__body">
+          <img src="../../assets/images/chip.jpg" alt="Nike Huarache" class="card__image14 card__will-animate">
+          <a class="card__wish-list card__wish-list--solstice card__will-animate" (click)="vasos()">Elegir</a>
+        </div>
+      </div> 
+  </div>
+  </div>
+</div>
+
+<div  style="height:100%" [hidden]="!mostrar_cafes">
+  <div class="headown">
+    <div class="linea"></div>
+        <img src="../../assets/images/sb.png"  class="logo">
+          <label class="titulo">Starbucks </label>
+    
+  </div>
+  <div style="height:90%; width:100%;" class="divseleccion">    
+      <div class="cards-placeholder">
+      <div class="cards-placeholder__item"></div>
+      <div class="cards-placeholder__item"></div>
+    </div>
+    <div class="wrapper"  style="height: 90%;">
+
+        <a class="button2 special2 "style="position: absolute; left: 95px;
+        top: 535px;  "(click)="seleccion()"  >Regresar</a>
+
+      <!-- primera carta -->
+      <div class="carta card--19">
+        <div class="card__header card__header--19">
+          <div class="card__watermark" data-watermark=""></div>
+
+          
+
+          <span class="card__price card__will-animate"></span>
+
+          <h1 class="card__title card__will-animate">Mocha</h1>
+          <span class="card__subtitle card__will-animate"> Es una variante del café con leche. Como éste, suele llevar un tercio de expreso y dos tercios de leche vaporizada, pero se añade una parte de chocolate, normalmente en forma de jarabe de chocolate.</span>
+
+        </div>
+
+        <div class="card__body">
+          <img src="../../assets/images/mocha.png" alt="Nike 19" class="card__image9 card__will-animate">
+          <a class="card__wish-list card__wish-list--solstice card__will-animate" (click)="vasos()">Elegir</a>
+
+          <span class="card__category card__will-animate"></span>
+        </div>
+      </div>
+     
+
+      <!-- Nike Solstice -->
+      <div class="carta card--solstice">
+        <div class="card__header card__header--solstice">
+          <div class="card__watermark" data-watermark=""></div>
+
+          
+
+          <span class="card__price card__will-animate"></span>
+
+          <h1 class="card__title card__will-animate">Cappuccino</h1>
+          <span class="card__subtitle card__will-animate">Es una bebida nacida en Italia, preparada con café expreso y leche montada con vapor para crear la espuma, que en ocasiones lleva también cacao o canela en polvo.</span>
+
+        </div>
+
+        <div class="card__body">
+          <img src="../../assets/images/capuccino.png" alt="Nike Solstice" class="card__image10 card__will-animate">
+          <a class="card__wish-list card__wish-list--solstice card__will-animate" (click)="vasos()">Elegir</a>
+
+          <span class="card__category card__will-animate"></span>
+        </div>
+      </div>
+
+      
+      <div class="carta card--huarache">
+        <div class="card__header card__header--huarache">
+          <div class="card__watermark" data-watermark=""></div>
+
+          
+
+          <span class="card__price card__will-animate"></span>
+
+          <h1 class="card__title card__will-animate">Espresso</h1>
+          <span class="card__subtitle card__will-animate">Los mejores ingredientes merecen los mejores utensilios. Nosotros estamos convencidos de que si algo necesario no se puede obtener hecho, hay que crearlo.s</span>
+
+        </div>
+
+        <div class="card__body">
+          <img src="../../assets/images/espresso.png" alt="Nike Huarache" class="card__image11 card__will-animate">
+          <a class="card__wish-list card__wish-list--solstice card__will-animate" (click)="vasos()">Elegir</a>
+        </div>
+      </div> 
+  </div>
+  </div>
+</div>
+
+<div  style="height:100%" [hidden]="!mostrar_desayunos">
+  <div class="headown">
+    <div class="linea"></div>
+        <img src="../../assets/images/sb.png"  class="logo">
+          <label class="titulo">Starbucks </label>
+    
+  </div>
+  <div style="height:90%; width:100%;" class="divseleccion">    
+    <div class="cards-placeholder">
+      <div class="cards-placeholder__item"></div>
+      <div class="cards-placeholder__item"></div>
+    </div>
+    <div class="wrapper"  style="height: 90%;">
+
+        <a class="button2 special2 "style="position: absolute; left: 95px;
+        top: 535px;  "(click)="seleccion()"  >Regresar</a>
+
+      <!-- primera carta -->
+      <div class="carta card--19">
+        <div class="card__header card__header--19">
+          <div class="card__watermark" data-watermark=""></div>
+
+          
+
+          <span class="card__price card__will-animate"></span>
+
+          <h1 class="card__title card__will-animate">Croissant de Jamón y Queso</h1>
+          <span class="card__subtitle card__will-animate"> Es una variante del café con leche. Como éste, suele llevar un tercio de expreso y dos tercios de leche vaporizada, pero se añade una parte de chocolate, normalmente en forma de jarabe de chocolate.</span>
+
+        </div>
+
+        <div class="card__body">
+          <img src="../../assets/images/crossaint.png" alt="Nike 19" class="card__image15 card__will-animate">
+          <div class="card__wish-list card__wish-list--19 card__will-animate">Elegir</div>
+
+          <span class="card__category card__will-animate"></span>
+        </div>
+      </div>
+     
+
+      <!-- Nike Solstice -->
+      <div class="carta card--solstice">
+        <div class="card__header card__header--solstice">
+          <div class="card__watermark" data-watermark=""></div>
+
+
+
+      </div>
+
+
+      
+      <div class="carta card--huarache">
+        <div class="card__header card__header--huarache">
+          <div class="card__watermark" data-watermark=""></div>
+
+          
+
+          <span class="card__price card__will-animate"></span>
+
+          <h1 class="card__title card__will-animate">Panini Mozzarella Y Tomato</h1>
+          <span class="card__subtitle card__will-animate">Los mejores ingredientes merecen los mejores utensilios. Nosotros estamos convencidos de que si algo necesario no se puede obtener hecho, hay que crearlo.s</span>
+
+        </div>
+
+        <div class="card__body">
+          <img src="../../assets/images/panini2.png" alt="Nike Huarache" class="card__image17 card__will-animate">
+          <div class="card__wish-list card__wish-list--solstice card__will-animate">Elegir</div>
+        </div>
+      </div> 
+  </div>
+  </div>
+</div>
+<div  style="height:100%" [hidden]="!mostrar_panaderia">
+  <div class="headown">
+    <div class="linea"></div>
+        <img src="../../assets/images/sb.png"  class="logo">
+          <label class="titulo">Starbucks </label>
+    
+  </div>
+  <div style="height:90%; width:100%;" class="divseleccion">    
+    <div class="cards-placeholder">
+      <div class="cards-placeholder__item"></div>
+      <div class="cards-placeholder__item"></div>
+    </div>
+    <div class="wrapper"  style="height: 90%;">
+
+        <a class="button2 special2 "style="position: absolute; left: 95px;
+        top: 535px;  "(click)="seleccion()"  >Regresar</a>
+
+      <!-- primera carta -->
+      <div class="carta card--19">
+        <div class="card__header card__header--19">
+          <div class="card__watermark" data-watermark=""></div>
+
+          
+
+          <span class="card__price card__will-animate"></span>
+
+          <h1 class="card__title card__will-animate">Pan de elote</h1>
+          <span class="card__subtitle card__will-animate"> Es una variante del café con leche. Como éste, suele llevar un tercio de expreso y dos tercios de leche vaporizada, pero se añade una parte de chocolate, normalmente en forma de jarabe de chocolate.</span>
+
+        </div>
+
+        <div class="card__body">
+          <img src="../../assets/images/panelote.png" alt="Nike 19" class="card__image18 card__will-animate">
+          <div class="card__wish-list card__wish-list--19 card__will-animate">Elegir</div>
+
+          <span class="card__category card__will-animate"></span>
+        </div>
+      </div>
+     
+
+      <!-- Nike Solstice -->
+      <div class="carta card--solstice">
+        <div class="card__header card__header--solstice">
+          <div class="card__watermark" data-watermark=""></div>
+
+          
+
+          <span class="card__price card__will-animate"></span>
+
+          <h1 class="card__title card__will-animate">Dona de Chocolate</h1>
+          <span class="card__subtitle card__will-animate">Es una bebida nacida en Italia, preparada con café expreso y leche montada con vapor para crear la espuma, que en ocasiones lleva también cacao o canela en polvo.</span>
+
+        </div>
+
+        <div class="card__body">
+          <img src="../../assets/images/dona.png" alt="Nike Solstice" class="card__image19 card__will-animate">
+          <div class="card__wish-list card__wish-list--solstice card__will-animate">Elegir</div>
+
+          <span class="card__category card__will-animate"></span>
+        </div>
+      </div>
+
+      
+      <div class="carta card--huarache">
+        <div class="card__header card__header--huarache">
+          <div class="card__watermark" data-watermark=""></div>
+
+          
+
+          <span class="card__price card__will-animate"></span>
+
+          <h1 class="card__title card__will-animate">Rollo De Canela</h1>
+          <span class="card__subtitle card__will-animate">Los mejores ingredientes merecen los mejores utensilios. Nosotros estamos convencidos de que si algo necesario no se puede obtener hecho, hay que crearlo.s</span>
+
+        </div>
+
+        <div class="card__body">
+          <img src="../../assets/images/rollocanela.png" alt="Nike Huarache" class="card__image20 card__will-animate">
+          <div class="card__wish-list card__wish-list--solstice card__will-animate">Elegir</div>
+        </div>
+      </div> 
+  </div>
+  </div>
+</div>
+<div  style="height:100%" [hidden]="!mostrar_antojos">
+  <div class="headown">
+    <div class="linea"></div>
+        <img src="../../assets/images/sb.png"  class="logo">
+          <label class="titulo">Starbucks </label>
+    
+  </div>
+  <div style="height:90%; width:100%;" class="divseleccion">    
+    <div class="cards-placeholder">
+      <div class="cards-placeholder__item"></div>
+      <div class="cards-placeholder__item"></div>
+    </div>
+    <div class="wrapper"  style="height: 90%;">
+
+        <a class="button2 special2 "style="position: absolute; left: 95px;
+        top: 535px;  "(click)="seleccion()"  >Regresar</a>
+
+      <!-- primera carta -->
+      <div class="carta card--19">
+        <div class="card__header card__header--19">
+          <div class="card__watermark" data-watermark=""></div>
+
+         
+
+          <span class="card__price card__will-animate"></span>
+
+          <h1 class="card__title card__will-animate">Barra Saludable</h1>
+          <span class="card__subtitle card__will-animate"> Es una variante del café con leche. Como éste, suele llevar un tercio de expreso y dos tercios de leche vaporizada, pero se añade una parte de chocolate, normalmente en forma de jarabe de chocolate.</span>
+
+        </div>
+
+        <div class="card__body">
+          <img src="../../assets/images/barra.png" alt="Nike 19" class="card__image21 card__will-animate">
+          <div class="card__wish-list card__wish-list--19 card__will-animate">Elegir</div>
+
+          <span class="card__category card__will-animate"></span>
+        </div>
+
       </div>
       <div style="height:90%; width:100%;" class="divseleccion">
 
         <!-- AQUI PON EL CODIGO DE ALIMENTOS-->
 
+
+          
+
+          <span class="card__price card__will-animate"></span>
+
+          <h1 class="card__title card__will-animate">Galleta Sugar Free</h1>
+          <span class="card__subtitle card__will-animate">Es una bebida nacida en Italia, preparada con café expreso y leche montada con vapor para crear la espuma, que en ocasiones lleva también cacao o canela en polvo.</span>
+
+        </div>
+
+        <div class="card__body">
+          <img src="../../assets/images/galleta2.png" alt="Nike Solstice" class="card__image22 card__will-animate">
+          <div class="card__wish-list card__wish-list--solstice card__will-animate">Elegir</div>
+
+          <span class="card__category card__will-animate"></span>
+        </div>
       </div>
+
+      
+      <div class="carta card--huarache">
+        <div class="card__header card__header--huarache">
+          <div class="card__watermark" data-watermark=""></div>
+
+          
+
+          <span class="card__price card__will-animate"></span>
+
+          <h1 class="card__title card__will-animate">Mentas</h1>
+          <span class="card__subtitle card__will-animate">Los mejores ingredientes merecen los mejores utensilios. Nosotros estamos convencidos de que si algo necesario no se puede obtener hecho, hay que crearlo.s</span>
+
+        </div>
+
+        <div class="card__body">
+          <img src="../../assets/images/mentas.png" alt="Nike Huarache" class="card__image23 card__will-animate">
+          <div class="card__wish-list card__wish-list--solstice card__will-animate">Elegir</div>
+        </div>
+      </div> 
+  </div>
+  </div>
 </div>
+
+<div  style="height:100%" [hidden]="!mostrar_vasos">
+    <h1>Vasos</h1>
+</div>
+
+
+
+
