@@ -14,6 +14,7 @@ export class ventanasComponent implements OnInit {
   mostrar_seleccion = false;
   mostrar_bebidas = false;
   mostrar_alimentos = false;
+  mostrar_tees = false;
   
   nbebidas=0;
   
@@ -33,6 +34,8 @@ export class ventanasComponent implements OnInit {
     this.mostrar_inicio = false;
     this.mostrar_seleccion = false; 
     this.mostrar_bebidas = false;
+    this.mostrar_tees = false;
+
   }
   inicio(){
     this.reset()
@@ -57,6 +60,10 @@ export class ventanasComponent implements OnInit {
   alimentos(){
     this.reset()
     this.mostrar_alimentos = true;
+  }
+  tees(){
+    this.reset()
+    this.mostrar_tees = true;
   }
 
 }

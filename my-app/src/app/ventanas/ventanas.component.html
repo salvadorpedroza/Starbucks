@@ -111,31 +111,180 @@
 
 
 <div style="height:100%" [hidden]="!mostrar_bebidas">
-    <div class="headown">
-        <div class="linea"></div>
-        <img src="../../assets/images/sb.png"  class="logo">
-        <label class="titulo">Starbucks </label>
-        
+  <div class="headown">
+      <div class="linea"></div>
+      <img src="../../assets/images/sb.png"  class="logo">
+      <label class="titulo">Starbucks </label>
+      
+    </div>
+    <div style="height:90%; width:100%;" class="divseleccion">
+      
+      
+      <div class="cards-placeholder">
+        <div class="cards-placeholder__item"></div>
+        <div class="cards-placeholder__item"></div>
+        <div class="cards-placeholder__item"></div>
       </div>
-      <div style="height:90%; width:100%;" class="divseleccion">
+      <div class="wrapper" style="height: 90%;">
+  
+        <!-- primera carta -->
+        <div class="carta card--19">
+          <div class="card__header card__header--19">
+            <div class="card__watermark" data-watermark=""></div>
+  
+            <img src="../../assets/images/star.png" alt="Nike" class="card__logo card__will-animate">
+  
+            <span class="card__price card__will-animate"></span>
+  
+            <h1 class="card__title card__will-animate">Café</h1>
+            <span class="card__subtitle card__will-animate">Es simplemente perfecto para consentirte, porque sabemos que después de un día lleno de mucha actividad, el Café Moka Blanco es el mejor para relajarte y disfrutar.</span>
+  
+          </div>
+  
+          <div class="card__body">
+            <img src="../../assets/images/cafe2.png" alt="Nike 19" class="card__image card__will-animate">
+            <div class="card__wish-list card__wish-list--19 card__will-animate">Elegir</div>
+  
+            <span class="card__category card__will-animate"></span>
+          </div>
+        </div>
+       
+  
+        <!-- Nike Solstice -->
+        <div class="carta card--solstice">
+          <div class="card__header card__header--solstice">
+            <div class="card__watermark" data-watermark=""></div>
+  
+            <img src="../../assets/images/star2.png" alt="Nike" class="card__logo card__will-animate">
+  
+            <span class="card__price card__will-animate"></span>
+  
+            <h1 class="card__title card__will-animate">Té</h1>
+            <span class="card__subtitle card__will-animate">Es simplemente perfecto para consentirte, porque sabemos que después de un día lleno de mucha actividad, el Café Latte es el mejor para relajarte y disfrutar</span>
+  
+          </div>
+  
+          <div class="card__body">
+            <img src="../../assets/images/te2.png" alt="Nike Solstice" class="card__image card__will-animate">
+            <a class="card__wish-list card__wish-list--solstice card__will-animate" (click)="tees()">Elegir</a>
+          </div>
+        </div>
+  
         
-        
-        <!-- AQUI PON EL CODIGO DE BEBIDAS-->
+        <div class="carta card--huarache">
+          <div class="card__header card__header--huarache">
+            <div class="card__watermark" data-watermark=""></div>
+  
+            <img  src="../../assets/images/star.png" alt="Nike" class="card__logo card__will-animate">
+  
+            <span class="card__price card__will-animate"></span>
+  
+            <h1 class="card__title card__will-animate">Frapuccino</h1>
+            <span class="card__subtitle card__will-animate">The Nike Air Huarache Utility Men's Shoe toughens up a famous running shoe with a nylon upper, fused mudguard and vibrant detail.</span>
+  
+          </div>
+  
+          <div class="card__body">
+            <img src="../../assets/images/frapuccino.png" alt="Nike Huarache" class="card__image2 card__will-animate">
+            <div class="card__wish-list card__wish-list--solstice card__will-animate">Elegir</div>
+          </div>
+        </div> 
+  
+         
+      </div> 
 
 
-      </div>
+    </div>
 </div>
 
 <div style="height:100%" [hidden]="!mostrar_alimentos">
-    <div class="headown">
-        <div class="linea"></div>
-        <img src="../../assets/images/sb.png"  class="logo">
-        <label class="titulo">Starbucks </label>
+  <div class="headown">
+      <div class="linea"></div>
+      <img src="../../assets/images/sb.png"  class="logo">
+      <label class="titulo">Starbucks </label>
+      
+    </div>
+    <div style="height:90%; width:100%;" class="divseleccion">
+
+      <div class="cards-placeholder">
+        <div class="cards-placeholder__item"></div>
+        <div class="cards-placeholder__item"></div>
+      </div>
+      <div class="wrapper" style="height: 90%;">
+  
+        <!-- primera carta -->
+        <div class="carta card--19" style="webkit-box-shadow: none;">
+          <div class="card__header card__header--19">
+            <div class="card__watermark" data-watermark=""></div>
+  
+            <img src="../../assets/images/star.png" alt="Nike" class="card__logo card__will-animate">
+  
+            <span class="card__price card__will-animate"></span>
+  
+            <h1 class="card__title card__will-animate">Desayunos</h1>
+            <span class="card__subtitle card__will-animate">Es simplemente perfecto para consentirte, porque sabemos que después de un día lleno de mucha actividad, el Café Moka Blanco es el mejor para relajarte y disfrutar.</span>
+  
+          </div>
+  
+          <div class="card__body">
+            <img src="../../assets/images/panini.png" alt="Nike 19" class="card__image4 card__will-animate">
+            <div class="card__wish-list card__wish-list--19 card__will-animate">Elegir</div>
+  
+            <span class="card__category card__will-animate"></span>
+          </div>
+        </div>
+       
+  
+        <!-- Nike Solstice -->
+        <div class="carta card--solstice" style="webkit-box-shadow: none;">
+          <div class="card__header card__header--solstice">
+            <div class="card__watermark" data-watermark=""></div>
+  
+            <img src="../../assets/images/star.png" alt="Nike" class="card__logo card__will-animate">
+  
+            <span class="card__price card__will-animate"></span>
+  
+            <h1 class="card__title card__will-animate">Panaderia</h1>
+            <span class="card__subtitle card__will-animate">Es simplemente perfecto para consentirte, porque sabemos que después de un día lleno de mucha actividad, el Café Latte es el mejor para relajarte y disfrutar</span>
+  
+          </div>
+  
+          <div class="card__body">
+            <img src="../../assets/images/Croissant.png" alt="Nike Solstice" class="card__image3 card__will-animate">
+            <div class="card__wish-list card__wish-list--solstice card__will-animate">Elegir</div>
+  
+            <span class="card__category card__will-animate"></span>
+          </div>
+        </div>
+  
         
-      </div>
-      <div style="height:90%; width:100%;" class="divseleccion">
+        <div class="carta card--huarache " style="webkit-box-shadow: none;">
+          <div class="card__header card__header--huarache">
+            <div class="card__watermark" data-watermark=""></div>
+  
+            <img  src="../../assets/images/star.png" alt="Nike" class="card__logo card__will-animate">
+  
+            <span class="card__price card__will-animate"></span>
+  
+            <h1 class="card__title card__will-animate">Antojos</h1>
+            <span class="card__subtitle card__will-animate">The Nike Air Huarache Utility Men's Shoe toughens up a famous running shoe with a nylon upper, fused mudguard and vibrant detail.</span>
+  
+          </div>
+  
+          <div class="card__body">
+            <img src="../../assets/images/galleta.png" alt="Nike Huarache" class="card__image5 card__will-animate">
+            <div class="card__wish-list card__wish-list--solstice card__will-animate">Elegir</div>
+          </div>
+        </div> 
+  
+         
+      </div> 
 
-        <!-- AQUI PON EL CODIGO DE ALIMENTOS-->
-
-      </div>
+    </div>
 </div>
+<div  style="height:100%" [hidden]="!mostrar_tees">
+      <h6>Tees</h6>
+</div>
+
+
+
