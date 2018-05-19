@@ -20,6 +20,7 @@ export class ventanasComponent implements OnInit {
   mostrar_desayunos = false;
   mostrar_panaderia = false;
   mostrar_antojos = false;
+  mostrar_vasos = false;
   nbebidas=0;
   
   constructor() {
@@ -45,6 +46,7 @@ export class ventanasComponent implements OnInit {
     this.mostrar_desayunos = false;
     this.mostrar_panaderia = false;
     this.mostrar_antojos = false;
+    this.mostrar_vasos = false;
 
   }
   inicio(){
@@ -94,6 +96,10 @@ export class ventanasComponent implements OnInit {
   antojos(){
     this.reset()
     this.mostrar_antojos = true;
+  }
+  vasos(){
+    this.reset()
+    this.mostrar_vasos = true;
   }
 
 

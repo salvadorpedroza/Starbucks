@@ -177,7 +177,7 @@ body, {
 .card__header {
   position: relative;
   height: 90px;
-  padding: 30px 30px 380px;
+  padding: 30px 30px 300px;
   
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
@@ -242,7 +242,7 @@ body, {
 }
 
 .card__title {
-  margin: 35px 0 20px;
+  margin: px 0 20px;
   font-size: 15px;
   line-height: 1.1em;
   text-transform: uppercase;
