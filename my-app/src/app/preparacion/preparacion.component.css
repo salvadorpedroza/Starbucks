@@ -1,3 +1,23 @@
+.div-move-window{
+    height: 14%;
+}
+
+.div-up{
+    height: 80%;
+}
+
+.headown{
+    width: 100%;
+    height: 10%;
+    background: #fff;
+    
+    /*background: #023f26;*/
+}
+
+.divbody{
+    background: rgb(238, 237, 236);
+}
+
 .linea{
     width: 100%;
     height: 6px;

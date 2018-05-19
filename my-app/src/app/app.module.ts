@@ -4,11 +4,13 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { ventanasComponent } from './ventanas/ventanas.component';
 import { NgxSlideshowModule } from 'ngx-slideshow';
+import { PreparacionComponent } from './preparacion/preparacion.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ventanasComponent,
+    PreparacionComponent,
   ],
   imports: [
     BrowserModule,
