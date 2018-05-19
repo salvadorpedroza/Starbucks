@@ -308,6 +308,140 @@ body, {
   left: 66px;
   width: 65%;
 }
+.card__image6 {
+  z-index: 1;
+  position: absolute;
+  top: -180px;
+  left: 105px;
+  width: 40%;
+}
+.card__image7 {
+  z-index: 1;
+  position: absolute;
+  top: -190px;
+  left: 90px;
+  width: 54%;
+}
+
+.card__image8 {
+  z-index: 1;
+  position: absolute;
+  top: -180px;
+  left: 50px;
+  width: 53%;
+}
+
+.card__image9 {
+  z-index: 1;
+  position: absolute;
+  top: -290px;
+  left: 70px;
+  width: 53%;
+}
+.card__image10 {
+  z-index: 1;
+  position: absolute;
+  top: -226px;
+  left: 58px;
+  width: 72%;
+}
+
+.card__image11 {
+  z-index: 1;
+  position: absolute;
+  top: -190px;
+  left: 80px;
+  width: 50%;
+}
+
+.card__image12 {
+  z-index: 1;
+  position: absolute;
+  top: -220px;
+  left: 63px;
+  width: 60%;
+}
+.card__image13 {
+  z-index: 1;
+  position: absolute;
+  top: -204px;
+  left: 100px;
+  width: 43%;
+}
+
+.card__image14 {
+  z-index: 1;
+  position: absolute;
+  top: -210px;
+  left: 100px;
+  width: 34%;
+}
+.card__image15 {
+  z-index: 1;
+  position: absolute;
+  top: -200px;
+  left: 30px;
+  width: 90%;
+}
+.card__image16 {
+  z-index: 1;
+  position: absolute;
+  top: -200px;
+  left: 50px;
+  width: 80%;
+}
+
+.card__image17 {
+  z-index: 1;
+  position: absolute;
+  top: -200px;
+  left: 50px;
+  width: 80%;
+}
+.card__image18 {
+  z-index: 1;
+  position: absolute;
+  top: -160px;
+  left: 86px;
+  width: 50%;
+}
+.card__image19 {
+  z-index: 1;
+  position: absolute;
+  top: -200px;
+  left: 80px;
+  width: 60%;
+}
+
+.card__image20 {
+  z-index: 1;
+  position: absolute;
+  top: -170px;
+  left: 86px;
+  width: 50%;
+}
+.card__image21 {
+  z-index: 1;
+  position: absolute;
+  top: -180px;
+  left: 70px;
+  width: 70%;
+}
+.card__image22 {
+  z-index: 1;
+  position: absolute;
+  top: -200px;
+  left: 50px;
+  width: 80%;
+}
+
+.card__image23 {
+  z-index: 1;
+  position: absolute;
+  top: -200px;
+  left: 80px;
+  width: 53%;
+}
 
 
 

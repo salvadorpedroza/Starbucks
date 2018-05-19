@@ -15,7 +15,11 @@ export class ventanasComponent implements OnInit {
   mostrar_bebidas = false;
   mostrar_alimentos = false;
   mostrar_tees = false;
-  
+  mostrar_cafes = false;
+  mostrar_frapes = false;
+  mostrar_desayunos = false;
+  mostrar_panaderia = false;
+  mostrar_antojos = false;
   nbebidas=0;
   
   constructor() {
@@ -34,7 +38,13 @@ export class ventanasComponent implements OnInit {
     this.mostrar_inicio = false;
     this.mostrar_seleccion = false; 
     this.mostrar_bebidas = false;
+    this.mostrar_alimentos = false;
     this.mostrar_tees = false;
+    this.mostrar_cafes = false;
+    this.mostrar_frapes= false;
+    this.mostrar_desayunos = false;
+    this.mostrar_panaderia = false;
+    this.mostrar_antojos = false;
 
   }
   inicio(){
@@ -65,5 +75,26 @@ export class ventanasComponent implements OnInit {
     this.reset()
     this.mostrar_tees = true;
   }
+  cafes(){
+    this.reset()
+    this.mostrar_cafes = true;
+  }
+  frapes(){
+    this.reset()
+    this.mostrar_frapes = true;
+  }
+  desayunos(){
+    this.reset()
+    this.mostrar_desayunos = true;
+  }
+  panaderia(){
+    this.reset()
+    this.mostrar_panaderia = true;
+  }
+  antojos(){
+    this.reset()
+    this.mostrar_antojos = true;
+  }
+
 
 }
