@@ -1,9 +1,6 @@
-.div-move-window{
-    height: 14%;
-}
 
 .div-up{
-    height: 80%;
+    height: 60%;
 }
 
 .headown{
@@ -36,4 +33,66 @@
     margin-top: 0;
     /* margin-bottom: 5px; */
     color: #023f26;
+}
+
+.sth2{
+    color: #023f26;
+    /* text-align: center; */
+    padding-top: 1em;
+    padding-left: 3em;
+}
+
+.divupselect{
+    height: 10%;
+}
+
+.items{
+    float: left;
+    margin-right: 0;
+    border-radius: 4px;
+    margin-left: 1%;
+    height: 96%;
+    width: 78%;
+    background: #fff;  
+    box-shadow: -6px 6px 4px 0 rgba(0, 0, 0, 0.14);
+}
+
+.vaso{
+    border-radius: 4px;
+    float: right;
+    margin-right: 2%;
+    height: 96%;
+    width: 17%;
+    background: #fff;
+    box-shadow: -6px 6px 4px 0 rgba(0, 0, 0, 0.14);
+}
+
+.div-move-window{
+    border-radius: 4px;
+    margin-top: 4px;
+    height: 25%;
+    margin-left: 1%;
+    width: 97%;
+    background: #fff;    box-shadow: -6px 6px 4px 0 rgba(0, 0, 0, 0.14);
+
+}
+
+.sizeimg{
+    background-size: 100% 100%;
+    height: 12em;
+    width: 12em;
+}
+
+.liimg{
+    float: left;
+    height: 12em;
+    width: 12em;
+    padding: 0;
+    margin-left: 2%;
+    margin-top: 6%;
+}
+
+.ulitems{
+    width: 100%;
+    margin: 0;
 }

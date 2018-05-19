@@ -21,6 +21,24 @@ export class ventanasComponent implements OnInit {
   mostrar_panaderia = false;
   mostrar_antojos = false;
   nbebidas=0;
+  producto = ""
+  dictionary = {
+      te:[
+
+
+      ],
+
+      cafe:[
+
+        
+      ],
+      frape:[
+
+        
+      ]
+  }
+
+  
   
   constructor() {
     this.images = new Array<string>();
@@ -28,11 +46,14 @@ export class ventanasComponent implements OnInit {
     this.images[0]= "../../assets/images/promo1.jpg";
     this.images[1]="../../assets/images/promo2.PNG";
     this.images[2]="../../assets/images/promo3.png";
+    this.dictionary[this.producto];
    }
 
   ngOnInit() {
   }
-
+cafe(){
+  this.producto="cafe";
+}
   reset(){
     this.mostrar_promociones = false;
     this.mostrar_inicio = false;

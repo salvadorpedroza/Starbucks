@@ -6,8 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./preparacion.component.css']
 })
 export class PreparacionComponent implements OnInit {
+  menuItems : any[];
 
-  constructor() { }
+  constructor() {
+    this.menuItems = [
+      { path: '../../assets/images/chico.jpg', title: 'PROBLEMS CHART' },
+      { path: '../../assets/images/mediano.jpg', title: 'PREDICTIONS' },
+      { path: '../../assets/images/grande.jpg', title: 'HISTOGRAM' },
+      { path: '../../assets/images/jumbo.jpg', title: 'HISTOGRAM' }
+    ]
+  }
 
   ngOnInit() {
   }

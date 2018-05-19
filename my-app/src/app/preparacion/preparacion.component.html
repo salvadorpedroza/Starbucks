@@ -7,9 +7,20 @@
     </div>
 
     <div style="height:90%; width:100%;" class="divbody">
-
+      <div class="divupselect">
+        <h2 class="sth2"> Elige tu producto </h2>
+        
+          </div>
       <div class="div-up">
-
+        <div class="items">
+          <ul class="ulitems">
+            <li *ngFor="let menuItem of menuItems" class="liimg" >
+                <img class="sizeimg" src="{{menuItem.path}}" > 
+                <p>{{menuItem.title}}</p>
+            </li>
+          </ul>
+        </div>
+        <div class="vaso"></div>
       </div>
       <!-- AQUI PON EL CODIGO DE BEBIDAS-->
       <div class="div-move-window"> </div>
