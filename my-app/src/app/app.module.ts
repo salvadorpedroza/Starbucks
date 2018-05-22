@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { ventanasComponent } from './ventanas/ventanas.component';
 import { NgxSlideshowModule } from 'ngx-slideshow';
 import { PreparacionComponent } from './preparacion/preparacion.component';
+import { CajaComponent } from './caja/caja.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ventanasComponent,
     PreparacionComponent,
+    CajaComponent,
   ],
   imports: [
     BrowserModule,

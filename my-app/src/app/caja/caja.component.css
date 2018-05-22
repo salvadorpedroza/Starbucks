@@ -1,0 +1,94 @@
+
+.div-up{
+    height: 60%;
+}
+
+.headown{
+    width: 100%;
+    height: 10%;
+    background: #fff;
+    
+    /*background: #023f26;*/
+}
+
+.divbody{
+    background: rgb(238, 237, 236);
+}
+
+.linea{
+    width: 100%;
+    height: 6px;
+    background: #023f26;
+}
+
+.linea-sombra{
+    width: 96%;
+    margin-left: 2%;
+    border-bottom: solid 2px #ccc;
+    -webkit-box-shadow: -4px 4px 4px 0 rgba(0, 0, 0, 0.14);
+    box-shadow: -1px 3px 3px 0px rgba(0, 0, 0, 0.14);
+}
+
+.logo{
+    height: 80%;
+    margin-left: 2%;
+    margin-top: 2px;
+}
+
+.titulo{
+    font-size: 1em;
+    margin-left: 1px;
+    margin-top: 0;
+    /* margin-bottom: 5px; */
+    color: #023f26;
+}
+
+.sth2{
+    color: #023f26;
+    padding-top: .6em;
+    padding-left: 3em;
+}
+
+.divupselect{
+    height: 8%;
+    width: 76%;
+    float: left;
+}
+
+.items{
+    float: left;
+    margin-top: 2%;
+    /* margin-right: 0; */
+    border-radius: 4px;
+    margin-left: 2%;
+    height: 90%;
+    width: 94%;
+    background: #fff;
+    -webkit-box-shadow: -6px 6px 4px 0 rgba(0, 0, 0, 0.14);
+    box-shadow: -6px 6px 4px 0 rgba(0, 0, 0, 0.14);
+
+}
+
+.btn-new-prod{
+    width: 20em;
+    float: left;
+    height: 3.5em;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    line-height: 3.555em;
+}
+
+.btn-cancel-prod{
+    float: left;
+    margin-left: 4%;
+    background: #ed4933
+}
+
+.btn-pay-prod{
+    float: right;
+    margin-right: 4%;
+}
+
+.divcarrito{
+    height: 70%;
+}
