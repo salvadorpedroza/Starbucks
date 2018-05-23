@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { ventanasComponent } from '../ventanas/ventanas.component';
 
 @Component({
   selector: 'app-preparacion',
@@ -10,10 +12,10 @@ export class PreparacionComponent implements OnInit {
 
   constructor() {
     this.menuItems = [
-      { path: '../../assets/images/chico.jpg', title: '$43' },
-      { path: '../../assets/images/mediano.jpg', title: 'PREDICTIONS' },
-      { path: '../../assets/images/grande.jpg', title: 'HISTOGRAM' },
-      { path: '../../assets/images/jumbo.jpg', title: 'HISTOGRAM' }
+      { path: '../../assets/images/chico.jpg', title: 'CHICO $20' },
+      { path: '../../assets/images/mediano.jpg', title: 'MEDIANO $35' },
+      { path: '../../assets/images/grande.jpg', title: 'GRANDE $49' },
+      { path: '../../assets/images/jumbo.jpg', title: 'JUMBO $59' }
     ]
   }
 

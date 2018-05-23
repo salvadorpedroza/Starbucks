@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { PreparacionComponent } from './preparacion.component';
+import { ventanasComponent } from '../ventanas/ventanas.component';
 
 describe('PreparacionComponent', () => {
   let component: PreparacionComponent;

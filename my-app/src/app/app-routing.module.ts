@@ -4,11 +4,11 @@ import { BrowserModule  } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 
 import { ventanasComponent } from './ventanas/ventanas.component';
-
+import { PreparacionComponent } from './preparacion/preparacion.component';
 const routes: Routes = [
   { path: 'ventanas', component: ventanasComponent, data: { param: 'ventanas' } },
   { path: 'inicio', component: ventanasComponent, data: { param: 'inicio' }},
-  { path: 'seleccion', component: ventanasComponent, data: { param: 'seleccion' }}
+  { path: 'seleccion', component: ventanasComponent, data: { param: 'seleccion' }},
  // { path: 'histogram', component: DashboardComponent, data: { param: 'histogram' }},
  // { path: '', redirectTo: 'problem_management', pathMatch: 'full' }
 ];

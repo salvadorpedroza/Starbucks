@@ -1,0 +1,52 @@
+
+<div style="height:100%" >
+    <div class="headown">
+        <div class="linea"></div>
+        <img src="../../assets/images/sb.png"  class="logo">
+        <label class="titulo">Starbucks </label>
+        
+      </div>
+  
+      <div class="divbody">
+        <div class="divupselect">
+          <div class="titulo-color">
+            <h2 class="sth2"> Elige el tipo de leche </h2>
+          </div>
+        </div>
+        <div class="div-up">
+          <div class="items">
+            <ul class="ulitems">
+              <li *ngFor="let menuItem of menuItems" class="liimg" >
+                  <img class="sizeimg" src="{{menuItem.path}}" > 
+                  <p style="color:black; text-align: center; font-family:sans-serif; ">{{menuItem.title}}</p>
+              </li>
+            </ul>
+          </div>
+          <div class="vaso">
+            <div style="position: relative;">
+              <div style="position: absolute; left: 65px; top: 30px; font-family:sans-serif; color: black;">PROGRESO </div>
+              
+            </div>
+            <div style="position: relative;">
+               <div style="position: absolute; left: 0px; top: 60px; ">
+                  <img src="../../assets/images/vaso01.png" width="245" height="280" border="0">
+               </div>
+              </div>
+  
+          </div>
+        </div>
+        <a class="button2 special2 "style="position: absolute; left: 95px;
+        top: 75%; box-shadow: -6px 6px 4px 0 rgba(0, 0, 0, 0.14);  "(click)="seleccion()"  >Regresar</a>
+        <a class="button2 special2 "style="position: absolute; left: 800px;
+        top: 75%; box-shadow: -6px 6px 4px 0 rgba(0, 0, 0, 0.14); "(click)="caja()"  >Siguiente</a>
+        <a class="scrolly button special"style="position: absolute; left: 1126px;
+        top: 75%; cursor: pointer; display: inline-block; font-size: 0.8em; font-weight: 600;
+         height: 5.125em; width: 13em; letter-spacing: 0.225em; line-height: 5.125em; padding: 0 2.75em;
+        text-align: center; text-decoration: none; text-transform: uppercase; white-space: nowrap;
+         overflow: hidden; text-overflow: ellipsis; box-shadow: -6px 6px 4px 0 rgba(0, 0, 0, 0.14);"
+          (click)="inicio()">CANCELAR</a>
+  
+          
+  
+      </div>
+  </div>

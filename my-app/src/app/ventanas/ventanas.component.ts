@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
 //import {NgbCarousel} from '@ng-bootstrap/ng-bootstrap';
 //import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { PreparacionComponent } from '../preparacion/preparacion.component';
 @Component({
   selector: 'app-ventanas',
   templateUrl: './ventanas.component.html',
@@ -21,6 +22,9 @@ export class ventanasComponent implements OnInit {
   mostrar_panaderia = false;
   mostrar_antojos = false;
   mostrar_vasos = false;
+  mostrar_caja = false;
+  mostrar_leche = false;
+  
   nbebidas=0;
   producto = ""
   dictionary = {
@@ -68,7 +72,9 @@ cafe(){
     this.mostrar_panaderia = false;
     this.mostrar_antojos = false;
     this.mostrar_vasos = false;
-
+    this.mostrar_caja = false;
+    this.mostrar_leche = false;
+    
   }
   inicio(){
     this.reset()
@@ -122,6 +128,13 @@ cafe(){
     this.reset()
     this.mostrar_vasos = true;
   }
-
+  caja(){
+    this.reset()
+    this.mostrar_caja = true;
+  }
+  leche(){
+    this.reset()
+    this.mostrar_leche = true;
+  }
 
 }
