@@ -6,7 +6,7 @@
 
 .headown{
     width: 100%;
-    height: 10%;
+    height: 13%;
     background: #fff;
     box-shadow: 1px 1px 12px 4px #bbb;
     position: relative;
@@ -22,9 +22,9 @@
 }
 
 .linea{
-    width: 100%;
-    height: 6px;
-    background: #023f26;
+  width: 100%;
+  height: 8%;
+  background: #023f26
 }
 
 .pospromo{

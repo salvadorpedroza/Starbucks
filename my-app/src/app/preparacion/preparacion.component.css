@@ -1,24 +1,28 @@
 
 .div-up{
-    height: 60%;
+    height: 85%;
 }
 
 .headown{
     width: 100%;
-    height: 10%;
+    height: 13%;
     background: #fff;
+    box-shadow: 1px 1px 12px 4px #bbb;
+    position: relative;
     
     /*background: #023f26;*/
 }
 
 .divbody{
     background: rgb(238, 237, 236);
+    height: 87%;
+    width: 100%;
 }
 
 .linea{
     width: 100%;
-    height: 6px;
-    background: #023f26;
+    height: 8%;
+    background: #023f26
 }
 
 .logo{
@@ -50,8 +54,8 @@
     border-radius: 4px;
     margin-left: 1%;
     height: 96%;
-    width: 78%;
-    background: #fff;  
+    width: 77%;
+    background: #fff;
     box-shadow: -6px 6px 4px 0 rgba(0, 0, 0, 0.14);
 }
 
@@ -60,7 +64,7 @@
     float: right;
     margin-right: 2%;
     height: 96%;
-    width: 17%;
+    width: 18%;
     background: #fff;
     box-shadow: -6px 6px 4px 0 rgba(0, 0, 0, 0.14);
 }
@@ -101,7 +105,7 @@
 .titulo-color{
     height: 95%;
     background: #076940b9;
-    width: 75%;
+    width: 74%;
     border-radius: 6px;
     position: relative;
     top: 49%;

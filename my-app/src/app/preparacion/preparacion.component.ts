@@ -10,7 +10,7 @@ export class PreparacionComponent implements OnInit {
 
   constructor() {
     this.menuItems = [
-      { path: '../../assets/images/chico.jpg', title: 'PROBLEMS CHART' },
+      { path: '../../assets/images/chico.jpg', title: '$43' },
       { path: '../../assets/images/mediano.jpg', title: 'PREDICTIONS' },
       { path: '../../assets/images/grande.jpg', title: 'HISTOGRAM' },
       { path: '../../assets/images/jumbo.jpg', title: 'HISTOGRAM' }
