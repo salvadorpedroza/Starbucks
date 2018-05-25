@@ -23,8 +23,10 @@
           </ul>
         -->
         <div class="divcarrito">
-
-
+            <div *ngFor="let menuItem of menuItems" class="producto" >
+                <p style="color:black; text-align: center; font-family:sans-serif; ">{{menuItem.title}}</p>
+                
+            </div>
         </div>
         <a class="button2 special2 btn-cancel-prod" (click)="bebidas()"  > cancelar</a>
         <a class="button2 special2 btn-pay-prod" (click)="bebidas()"  > pagar</a>

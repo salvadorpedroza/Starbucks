@@ -28,9 +28,9 @@
 }
 
 .pospromo{
-    position: absolute;
-    right: 5%;
-    bottom: 7%;
+  position: absolute;
+  left: 80%;
+  top: 77%;
 }
 
 .logo{
@@ -52,7 +52,7 @@
 }
 
 .divcenterselect{
-    width: 55%;
+    width: 53%;
     margin-left: 5%;
     float: left;  
 }
