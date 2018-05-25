@@ -1,4 +1,5 @@
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <div style="height:100%" >
   <div class="headown">
       <div class="linea"></div>
@@ -13,8 +14,12 @@
           <h2 class="sth2"> Elige el tamaño </h2>
         </div>
       </div>
+      <div class="s1" (click)="mostrarTitulo1()" style="position: absolute;  left: 3.8%; top: 31%; font-family:sans-serif; ; height: 210px; width: 210px;"> </div>
+      <div class="s2" (click)="mostrarTitulo2()" style="position: absolute;  left: 20.8%; top: 31%; font-family:sans-serif; ; height: 210px; width: 210px;"> </div>
       <div class="div-up">
+
         <div class="items">
+           
           <ul class="ulitems">
             <li *ngFor="let menuItem of menuItems" class="liimg" >
                 <img class="sizeimg" src="{{menuItem.path}}" > 
@@ -36,9 +41,9 @@
         </div>
       </div>
       <a class="button2 special2 "style="position: absolute; left: 95px;
-      top: 75%; box-shadow: -6px 6px 4px 0 rgba(0, 0, 0, 0.14);  "(click)="seleccion()"  >Regresar</a>
+      top: 75%; box-shadow: -6px 6px 4px 0 rgba(0, 0, 0, 0.14);  "(click)="regresar()"  >Regresar</a>
       <a class="button2 special2 "style="position: absolute; left: 800px;
-      top: 75%; box-shadow: -6px 6px 4px 0 rgba(0, 0, 0, 0.14); "(click)="caja()"  >Siguiente</a>
+      top: 75%; box-shadow: -6px 6px 4px 0 rgba(0, 0, 0, 0.14); "(click)="siguiente()"  >Siguiente</a>
       <a class="scrolly button special"style="position: absolute; left: 1126px;
       top: 75%; cursor: pointer; display: inline-block; font-size: 0.8em; font-weight: 600;
        height: 5.125em; width: 13em; letter-spacing: 0.225em; line-height: 5.125em; padding: 0 2.75em;
@@ -46,7 +51,9 @@
        overflow: hidden; text-overflow: ellipsis; box-shadow: -6px 6px 4px 0 rgba(0, 0, 0, 0.14);"
         (click)="inicio()">CANCELAR</a>
 
-        
-
     </div>
 </div>
+
+
+
+    

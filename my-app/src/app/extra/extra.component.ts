@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-
+import { EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output } from '@angular/core';
 @Component({
   selector: 'app-extra',
   templateUrl: './extra.component.html',
@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExtraComponent implements OnInit {
   menuItems : any[];
-  constructor() {this.menuItems = [
+  @Output() boton = new EventEmitter();
+  constructor() {
+    this.boton = new EventEmitter<string>();
+    this.menuItems = [
     { path: '../../assets/images/almendrapolvo.png', title: 'ALMENDRAS' },
     { path: '../../assets/images/cocopolvo.png', title: 'COCO' },
     { path: '../../assets/images/nuezpolvo.jpg', title: 'NUEZ' },
@@ -16,5 +19,12 @@ export class ExtraComponent implements OnInit {
 
   ngOnInit() {
   }
+  siguiente(){
+    this.boton.emit("crema");
+  }
+  regresar(){
+    this.boton.emit("extra");
+  }
+
 
 }

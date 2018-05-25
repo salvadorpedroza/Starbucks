@@ -24,7 +24,8 @@ export class ventanasComponent implements OnInit {
   mostrar_vasos = false;
   mostrar_caja = false;
   mostrar_leche = false;
-  
+  mostrar_extra = false;
+  mostrar_crema = false;
   nbebidas=0;
   producto = ""
   dictionary = {
@@ -74,7 +75,8 @@ cafe(){
     this.mostrar_vasos = false;
     this.mostrar_caja = false;
     this.mostrar_leche = false;
-    
+    this.mostrar_extra = false;
+    this.mostrar_crema = false;
   }
   inicio(){
     this.reset()
@@ -135,6 +137,32 @@ cafe(){
   leche(){
     this.reset()
     this.mostrar_leche = true;
+  }
+  extra(){
+    this.reset()
+    this.mostrar_extra = true;
+  }
+  crema(){
+    this.reset()
+    this.mostrar_crema = true;
+  }
+
+
+  click(press: string){
+    if(press=="leche")
+      this.leche()
+    if(press=="seleccion")
+      this.seleccion()
+    if(press=="leche")
+      this.leche()
+    if(press=="vasos")
+      this.vasos()
+    if(press=="extra")
+      this.extra()
+    if(press=="crema")
+      this.crema()
+    if(press=="caja")
+      this.caja()
   }
 
 }

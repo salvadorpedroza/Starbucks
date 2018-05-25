@@ -809,13 +809,20 @@
 </div>
 
 <div  style="height:100%" [hidden]="!mostrar_vasos">
-  <app-preparacion></app-preparacion>
+  <app-preparacion (boton)="click($event)"></app-preparacion>
 </div>
 <div  style="height:100%" [hidden]="!mostrar_leche">
-    <app-leche></app-leche>
+    <app-leche (boton)="click($event)" ></app-leche>
   </div>
+  <div  style="height:100%" [hidden]="!mostrar_extra">
+    <app-extra (boton)="click($event)" ></app-extra>
+  </div>
+  <div  style="height:100%" [hidden]="!mostrar_crema">
+    <app-crema-batida (boton)="click($event)" ></app-crema-batida>
+  </div>
+  
 <div  style="height:100%" [hidden]="!mostrar_caja">
-  <app-caja></app-caja>
+  <app-caja (boton)="click($event)" ></app-caja>
 </div>
 
 
