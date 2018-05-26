@@ -12,7 +12,7 @@
           <div class="divupselect">
             <h3 class="sth2"> Tus productos </h3>
           </div>
-          <a class="button2 special2 btn-new-prod" (click)="bebidas()"  >+ Agregar otro producto</a>
+          <a class="button2 special2 btn-new-prod" (click)="bebidas()"  >+ Agregar otro</a>
          
           <hr class="linea-sombra"> 
         <!--  <ul class="ulitems">
@@ -24,7 +24,7 @@
         -->
         <div class="divcarrito">
             <div *ngFor="let menuItem of menuItems" class="producto" >
-                <p style="color:black; text-align: center; font-family:sans-serif; ">{{menuItem.title}}</p>
+                <span class="spanproducto">{{menuItem.title}}</span>
                 
             </div>
         </div>
