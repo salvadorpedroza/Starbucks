@@ -13,8 +13,8 @@ export class ExtraComponent implements OnInit {
     this.menuItems = [
     { path: '../../assets/images/almendrapolvo.png', title: 'ALMENDRAS' },
     { path: '../../assets/images/cocopolvo.png', title: 'COCO' },
-    { path: '../../assets/images/nuezpolvo.jpg', title: 'NUEZ' },
-    { path: '../../assets/images/chocolatepolvo.jpg', title: 'CHOCOLATE' }
+    { path: '../../assets/images/nuezpolvo.png', title: 'NUEZ' },
+    { path: '../../assets/images/chocolatepolvo.png', title: 'CHOCOLATE' }
   ] }
 
   ngOnInit() {
@@ -23,8 +23,12 @@ export class ExtraComponent implements OnInit {
     this.boton.emit("crema");
   }
   regresar(){
-    this.boton.emit("extra");
+    this.boton.emit("leche");
   }
+  seleccion(){
+    this.boton.emit("seleccion");
+  }
+
 
 
 }

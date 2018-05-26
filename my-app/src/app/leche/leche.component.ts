@@ -26,6 +26,9 @@ menuItems : any[];
   regresar(){
     this.boton.emit("vasos");
   }
+  seleccion(){
+    this.boton.emit("seleccion");
+  }
 
 
 }

@@ -23,6 +23,10 @@ export class CremaBatidaComponent implements OnInit {
   regresar(){
     this.boton.emit("extra");
   }
+  seleccion(){
+    this.boton.emit("seleccion");
+  }
+
 
 
 }

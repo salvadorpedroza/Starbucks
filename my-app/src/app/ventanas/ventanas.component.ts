@@ -26,6 +26,7 @@ export class ventanasComponent implements OnInit {
   mostrar_leche = false;
   mostrar_extra = false;
   mostrar_crema = false;
+  origen_ventana = ""
   nbebidas=0;
   producto = ""
   dictionary = {
@@ -105,6 +106,7 @@ cafe(){
   tees(){
     this.reset()
     this.mostrar_tees = true;
+    this.origen_ventana = "tees"
   }
   cafes(){
     this.reset()
