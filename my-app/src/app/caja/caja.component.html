@@ -24,8 +24,20 @@
         -->
         <div class="divcarrito">
             <div *ngFor="let menuItem of menuItems" class="producto" >
-                <span class="spanproducto">{{menuItem.title}}</span>
-                
+                <div class="pname"><span class="spanproducto">{{menuItem.producto}}</span></div>
+                <div class="divcantidad">
+                    <label class="precio">{{menuItem.precio}}</label>   
+                </div>
+     
+                <div class="divcantidad">
+                  <a class="button2 special2 btnmenos" >-</a>
+                  <label class="inputcantidad">{{menuItem.cantidad}}</label>   
+                  <a class="button2 special2 btnmas" >+</a>      
+                </div>
+                <div class="divcantidad2">
+                    <label class="precio">{{menuItem.precio*menuItem.cantidad}}</label>   
+                </div>
+   
             </div>
         </div>
         <a class="button2 special2 btn-cancel-prod" (click)="bebidas()"  > cancelar</a>

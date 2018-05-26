@@ -28,7 +28,6 @@
     box-shadow: 1px 1px 3px 1px #bbb;
     margin-top: .5em;
     width: 96%;
-    padding-top: .5em;
 }
 .linea{
     width: 100%;
@@ -125,3 +124,66 @@
     margin-left: 2em;
     margin-top:1em;
 }
+.divcantidad{
+    margin-top: .1%;
+    height: 96%;
+    width: 15%;
+    float: left;
+}
+
+.divcantidad2{
+    margin-top: .1%;
+    height: 96%;
+    width: 15%;
+    float: left;
+    margin-left: 10%;
+}
+
+.btnmenos{
+    background: #d9534f;
+    height: 100%;
+    width: 30%;
+    line-height: .8em;
+    padding: 0;
+    padding-left: 6%;
+    font-size: 2.8em;
+}
+
+.btnmas{
+    background: #5cb85c;
+    height: 100%;
+    width: 30%;
+    line-height: .8em;
+    padding: 0;
+    padding-left: 6%;
+    font-size: 2.8em;
+}
+
+ .inputcantidad{
+    height: 100%;
+    font-size: 2em;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: gray;
+    line-height: 25%;
+    vertical-align: middle;
+ }
+
+ .pname{
+     margin-top: .7%;
+     float: left;
+     width: 20%;
+ }
+
+ .precio{
+    height: 100%;
+    font-size: 2em;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: gray;
+    padding-top: 4%;
+    border: 2px solid lavender;
+    border-radius: 4px;
+    padding-left: 2%;
+    padding-right: 2%;
+ }
