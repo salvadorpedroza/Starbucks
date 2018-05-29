@@ -12,13 +12,13 @@
           <div class="divupselect">
             <h3 class="sth2"> Tus productos </h3>
           </div>
-          <a class="button2 special2 btn-new-prod" (click)="bebidas()"  >+ Agregar otro</a>
+          <a class="button2 special2 btn-new-prod" (click)="nuevo_producto()"  >+ Agregar otro</a>
          
           <hr class="linea-sombra"> 
         <!--  <ul class="ulitems">
-            <li *ngFor="let menuItem of menuItems" class="liimg" >
-                <img class="sizeimg" src="{{menuItem.path}}" > 
-                <p>{{menuItem.title}}</p>
+            <li *ngFor="let listaproducto of listaproductos" class="liimg" >
+                <img class="sizeimg" src="{{listaproducto.path}}" > 
+                <p>{{listaproducto.title}}</p>
             </li>
           </ul>
         -->
@@ -40,22 +40,22 @@
                     </div>
         
             </div>
-            <div *ngFor="let menuItem of menuItems" class="producto" >
-                <div class="pname"><span class="spanproducto">{{menuItem.producto}}</span></div>
-                <div class="divcantidad" style="margin-right:3%">
-                    <label class="precio">$ {{menuItem.precio}}</label>   
+            <div *ngFor="let listaproducto of listaproductos" class="producto" >
+                <div class="pname"><span class="spanproducto">{{listaproducto.producto}}</span></div>
+                <div class="divcantidad" style="margin-right:2%">
+                    <label class="precio">$ {{listaproducto.precio}}</label>   
                 </div>
      
                 <div class="divcantidad">
-                  <a class="button2 special2 btnmenos" (click)="resta(menuItem.producto)">-</a>
-                  <label class="inputcantidad">{{menuItem.cantidad}}</label>   
-                  <a class="button2 special2 btnmas" (click)="suma(menuItem.producto)">+</a>      
+                  <a class="button2 special2 btnmenos" (click)="resta(listaproducto.producto)">-</a>
+                  <label class="inputcantidad">{{listaproducto.cantidad}}</label>   
+                  <a class="button2 special2 btnmas" (click)="suma(listaproducto.producto)">+</a>      
                 </div>
                 <div class="divcantidad2">
-                    <label class="precio">$ {{menuItem.precio*menuItem.cantidad}}</label>   
+                    <label class="precio">$ {{listaproducto.precio*listaproducto.cantidad}}</label>   
                 </div>
                 <div class="diveliminar">
-                    <a class="button2 special2 btneliminar" (click)="suma(menuItem.producto)"><i class="fa fa-trash"></i></a>   
+                    <a class="button2 special2 btneliminar" (click)="eliminar_producto(listaproducto.producto)"><i class="fa fa-trash"></i></a>   
                 </div>
                 
    
