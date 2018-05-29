@@ -49,6 +49,8 @@ export class ventanasComponent implements OnInit {
   
   nuevo_producto(){
     this.listaproductos.push(this.producto);
+    delete this.producto;
+    this.producto = {tipo: "", nombre:"", precio: 0, cantidad:1, tipoleche:"", ingrediente:"", crema:""};
   }
 
   reset(){
