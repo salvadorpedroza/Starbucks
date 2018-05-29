@@ -274,31 +274,31 @@ export class ventanasComponent implements OnInit {
     this.caja();
   }
   barra(){
-    this.producto.nombre="Barra saludable"
+    this.producto.nombre="B. saludable"
     this.producto.precio= 39
     this.producto.tipo="antojo"
     this.caja();
   }
   galleta(){
-    this.producto.nombre="Galleta Sugar Free"
+    this.producto.nombre="Galleta S. Free"
     this.producto.precio= 49
     this.producto.tipo="antojo"
     this.caja();
   }
   desayuno1(){
-    this.producto.nombre="Croissant de Jamón y Queso"
+    this.producto.nombre="Croissant Jamón/Queso"
     this.producto.precio= 69
     this.producto.tipo="desayuno"
     this.caja();
   }
   desayuno2(){
-    this.producto.nombre="Panini Tres Quesos"
+    this.producto.nombre="Panini T. Quesos"
     this.producto.precio= 69
     this.producto.tipo="desayuno"
     this.caja();
   }
   desayuno3(){
-    this.producto.nombre="Panini Mozzarella Y Tomato"
+    this.producto.nombre="Panini M/Tomato"
     this.producto.precio= 69
     this.producto.tipo="desayuno"
     this.caja();
@@ -323,12 +323,12 @@ export class ventanasComponent implements OnInit {
   }
 
   metees1(){
-    this.producto.nombre="Peach Green Tea Lemonade"
+    this.producto.nombre="P. G. Tea Lemonade"
     this.producto.tipo="tees"
     this.vasos();
   }
   metees2(){
-    this.producto.nombre="Strawberry Green Tea Lemonade"
+    this.producto.nombre="S. G. Tea Lemonade"
     this.producto.tipo="tees"
     this.vasos();
   }
