@@ -27,7 +27,7 @@ export class ventanasComponent implements OnInit {
   mostrar_extra = false;
   mostrar_crema = false;
   nbebidas=0;
-  producto = {tipo: "", nombre:"", precio: 0, cantidad:1, tipoleche:""}
+  producto = {tipo: "", nombre:"", precio: 0, cantidad:1, tipoleche:"", ingrediente:"", crema:""}
   
 
   
@@ -94,7 +94,6 @@ export class ventanasComponent implements OnInit {
   cafes(){
     this.reset()
     this.mostrar_cafes = true;
-    this.producto.tipo = "cafes"
   }
   frapes(){
     this.reset()
@@ -115,6 +114,7 @@ export class ventanasComponent implements OnInit {
   vasos(){
     this.reset()
     this.mostrar_vasos = true;
+    this.playAudio(1);
   }
   caja(){
     this.reset()
@@ -123,18 +123,50 @@ export class ventanasComponent implements OnInit {
   leche(){
     this.reset()
     this.mostrar_leche = true;
+    this.playAudio(2);
   }
   extra(){
     this.reset()
     this.mostrar_extra = true;
+    this.playAudio(3);
   }
   crema(){
     this.reset()
     this.mostrar_crema = true;
+    this.playAudio(4);
   }
 
+  playAudio(bandera:number){
+    let audio1 = new Audio();
+    let audio2 = new Audio();
+    let audio3 = new Audio();
+    let audio4 = new Audio();
+    if(bandera==1){
+        audio1.src = "../../../assets/audio/vasos.mp3";
+        audio1.load();
+        audio1.play();
+      }
+      if(bandera==2){ 
+        audio2.src = "../../../assets/audio/leche.mp3";
+        audio2.load();
+        audio2.play();
+      }
+      if(bandera==3){ 
+        audio3.src = "../../../assets/audio/extra.mp3";
+        audio3.load();
+        audio3.play();
+      }
+      if(bandera==4){ 
+        audio4.src = "../../../assets/audio/crema.mp3";
+        audio4.load();
+        audio4.play();
+      }
+    }
+  
+ 
 
-  click(press: {destino:string,precio:number,tipoleche:string}){
+
+  click(press: {destino:string,precio:number}){
     this.producto.precio=press.precio;
     if(press.destino=="leche")
       this.leche()
@@ -151,18 +183,118 @@ export class ventanasComponent implements OnInit {
     if(press.destino=="caja")
       this.caja()
   }
-  click2(press: {tipoleche:string}){
+  click2(press: {destino:string, tipoleche:string}){
       
     this.producto.tipoleche=press.tipoleche;
+    if(press.destino=="leche")
+      this.leche()
+    if(press.destino=="seleccion")
+      this.seleccion()
+    if(press.destino=="leche")
+      this.leche()
+    if(press.destino=="vasos")
+      this.vasos()
+    if(press.destino=="extra")
+      this.extra()
+    if(press.destino=="crema")
+      this.crema()
+    if(press.destino=="caja")
+      this.caja()
+  }
+  click3(press: {destino:string,ingrediente:string}){
+      
+    this.producto.ingrediente=press.ingrediente;
+    if(press.destino=="leche")
+      this.leche()
+    if(press.destino=="seleccion")
+      this.seleccion()
+    if(press.destino=="leche")
+      this.leche()
+    if(press.destino=="vasos")
+      this.vasos()
+    if(press.destino=="extra")
+      this.extra()
+    if(press.destino=="crema")
+      this.crema()
+    if(press.destino=="caja")
+      this.caja()
+  }
+  click4(press: {destino:string,crema:string}){
+      
+    this.producto.crema=press.crema;
+    if(press.destino=="leche")
+      this.leche()
+    if(press.destino=="seleccion")
+      this.seleccion()
+    if(press.destino=="leche")
+      this.leche()
+    if(press.destino=="vasos")
+      this.vasos()
+    if(press.destino=="extra")
+      this.extra()
+    if(press.destino=="crema")
+      this.crema()
+    if(press.destino=="caja")
+      this.caja()
   }
 
 
+
   mentas(){
-    this.producto.nombre="mentas"
+    this.producto.nombre="Mentas"
+    this.producto.precio= 29
+    this.producto.tipo="antojo"
+    this.caja();
+  }
+  barra(){
+    this.producto.nombre="Barra saludable"
     this.producto.precio= 39
     this.producto.tipo="antojo"
     this.caja();
   }
+  galleta(){
+    this.producto.nombre="Galleta Sugar Free"
+    this.producto.precio= 49
+    this.producto.tipo="antojo"
+    this.caja();
+  }
+  desayuno1(){
+    this.producto.nombre="Croissant de Jamón y Queso"
+    this.producto.precio= 69
+    this.producto.tipo="desayuno"
+    this.caja();
+  }
+  desayuno2(){
+    this.producto.nombre="Panini Tres Quesos"
+    this.producto.precio= 69
+    this.producto.tipo="desayuno"
+    this.caja();
+  }
+  desayuno3(){
+    this.producto.nombre="Panini Mozzarella Y Tomato"
+    this.producto.precio= 69
+    this.producto.tipo="desayuno"
+    this.caja();
+  }
+  panaderia1(){
+    this.producto.nombre="Pan de elote"
+    this.producto.precio= 45
+    this.producto.tipo="panaderia"
+    this.caja();
+  }
+  panaderia2(){
+    this.producto.nombre="Dona de Chocolate"
+    this.producto.precio= 39
+    this.producto.tipo="panaderia"
+    this.caja();
+  }
+  panaderia3(){
+    this.producto.nombre="Rollo De Canela"
+    this.producto.precio= 49
+    this.producto.tipo="panaderia"
+    this.caja();
+  }
+
   metees1(){
     this.producto.nombre="Peach Green Tea Lemonade"
     this.producto.tipo="tees"
@@ -180,9 +312,33 @@ export class ventanasComponent implements OnInit {
   }
   mecafes1(){
     this.producto.nombre="Mocha"
-    this.producto.tipo="tees"
+    this.producto.tipo="cafes"
     this.vasos();
   }
-
+  mecafes2(){
+    this.producto.nombre="Cappuccino"
+    this.producto.tipo="cafes"
+    this.vasos();
+  }
+  mecafes3(){
+    this.producto.nombre="Espresso"
+    this.producto.tipo="cafes"
+    this.vasos();
+  }
+  mefrapes1(){
+    this.producto.nombre="Cafe"
+    this.producto.tipo="Frapes"
+    this.vasos();
+  }
+  mefrapes2(){
+    this.producto.nombre="Cajeta"
+    this.producto.tipo="Frapes"
+    this.vasos();
+  }
+  mefrapes3(){
+    this.producto.nombre="Chip"
+    this.producto.tipo="Frapes"
+    this.vasos();
+  }
 
 }
