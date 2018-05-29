@@ -20,4 +20,20 @@ export class CajaComponent implements OnInit {
   ngOnInit() {
   }
 
+  suma(producto:string){
+    for(var i=0; i<this.menuItems.length;i++){
+      if(this.menuItems[i].producto == producto){
+        this.menuItems[i].cantidad++;
+      }
+    }
+  }
+
+  resta(producto:string){
+    for(var i=0; i<this.menuItems.length;i++){
+      if(this.menuItems[i].producto == producto){
+        this.menuItems[i].cantidad--;
+      }
+    }
+  }
+
 }
