@@ -17,18 +17,19 @@ export class CajaComponent implements OnInit {
   ngOnInit() {
   }
 
-  suma(producto:string){
+  suma(producto:{}){
     for(var i=0; i<this.listaproductos.length;i++){
-      if(this.listaproductos[i].producto == producto){
+      if(this.listaproductos[i] == producto){
         this.listaproductos[i].cantidad++;
       }
     }
   }
 
-  resta(producto:string){
+  resta(producto: {}){
     for(var i=0; i<this.listaproductos.length;i++){
-      if(this.listaproductos[i].producto == producto){
-        this.listaproductos[i].cantidad--;
+      if(this.listaproductos[i] == producto){
+        if(this.listaproductos[i].cantidad>1)
+          this.listaproductos[i].cantidad--;
       }
     }
   }
