@@ -8,7 +8,6 @@ import { Component, OnInit, Input,EventEmitter,Output } from '@angular/core';
 export class CajaComponent implements OnInit {
   @Output() boton = new EventEmitter();
   @Input() listaproductos: any[];//copia esta
-  nuevoproducto = {tipo: "", nombre:"", precio: 0, cantidad:1, tipoleche:""}//copia esta
   info={destino:"seleccion"}
   constructor() {
     //this.actuallista = new EventEmitter<[{}]>();
@@ -34,10 +33,6 @@ export class CajaComponent implements OnInit {
     }
   }
 
-  nuevo_producto(){//copia esta
-    this.listaproductos.push(this.nuevoproducto);//copia esta
-  }//copia esta
-
   eliminar_producto(producto: {}){
     for(var i=0; i<this.listaproductos.length;i++){
       if(this.listaproductos[i] == producto){
@@ -45,11 +40,10 @@ export class CajaComponent implements OnInit {
         break;
       }
     }
-
   }
 
-  cancelar(){
-   delete this.listaproductos; 
+  cancelar(){ 
+   this.listaproductos.splice(0,this.listaproductos.length);
    this.boton.emit(this.info);
   }
 
