@@ -13,6 +13,7 @@ menuItems : any[];
 @Output() boton = new EventEmitter();
 @Input() origen = "";
 info={destino:"", tipoleche: ""}
+y=0
   constructor() {
     this.boton = new EventEmitter<{}>();
     this.menuItems = [
@@ -26,6 +27,9 @@ info={destino:"", tipoleche: ""}
   ngOnInit() {
   }
   siguiente(){
+
+    if(this.y==1)
+   {
     this.info.destino="extra"
     this.boton.emit(this.info);
 
@@ -37,11 +41,34 @@ info={destino:"", tipoleche: ""}
             }
         
   });
+  }
+  else{
+    $(document).ready(function()
+   {
+      $("#mostrarmodal2").modal("show");
+   });
+  }
 
   }
   regresar(){
+    $(document).ready(function() 
+    { /* Cualquier funcionalidad que queramos agregar a la página por medio de jQuery, debe ser incluida cuando el documento está listo para recibir acciones que modifiquen el DOM de la página. */
+       
+        { 
+          $('.s4').css('border', '0px'); $('.s1').css('border', '0px'); $('.s2').css('border', '0px'); $('.s3').css('border', '0px'); 
+         }
+     
+});
     this.info.destino="vasos"
     this.boton.emit(this.info);
+      $(document).ready(function() 
+       { /* Cualquier funcionalidad que queramos agregar a la página por medio de jQuery, debe ser incluida cuando el documento está listo para recibir acciones que modifiquen el DOM de la página. */
+          
+           { 
+             $('.s4').css('border', '0px'); $('.s1').css('border', '0px'); $('.s2').css('border', '0px'); $('.s3').css('border', '0px'); 
+            }
+        
+  });
   }
   seleccion(){
     this.info.destino="seleccion"
@@ -50,6 +77,7 @@ info={destino:"", tipoleche: ""}
 
   public leche1(){
     this.info.tipoleche="SANTA CLARA";
+    this.y=1
     $(document).ready(function() 
        { /* Cualquier funcionalidad que queramos agregar a la página por medio de jQuery, debe ser incluida cuando el documento está listo para recibir acciones que modifiquen el DOM de la página. */
           
@@ -62,6 +90,7 @@ info={destino:"", tipoleche: ""}
 
   public leche2(){
     this.info.tipoleche="LALA";
+    this.y=1
     $(document).ready(function() 
        { /* Cualquier funcionalidad que queramos agregar a la página por medio de jQuery, debe ser incluida cuando el documento está listo para recibir acciones que modifiquen el DOM de la página. */
           
@@ -74,6 +103,7 @@ info={destino:"", tipoleche: ""}
   
   public leche3(){
     this.info.tipoleche="SELLO ROJO";
+    this.y=1
     $(document).ready(function() 
        { /* Cualquier funcionalidad que queramos agregar a la página por medio de jQuery, debe ser incluida cuando el documento está listo para recibir acciones que modifiquen el DOM de la página. */
           
@@ -84,6 +114,7 @@ info={destino:"", tipoleche: ""}
   });
   }
   public leche4(){
+    this.y=1
     this.info.tipoleche="SAN MARCOS";
     $(document).ready(function() 
        { /* Cualquier funcionalidad que queramos agregar a la página por medio de jQuery, debe ser incluida cuando el documento está listo para recibir acciones que modifiquen el DOM de la página. */
