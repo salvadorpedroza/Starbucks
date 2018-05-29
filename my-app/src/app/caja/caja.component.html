@@ -7,7 +7,7 @@
     </div>
 
     <div class="divbody">
-        
+            
         <div class="items">
           <div class="divupselect">
             <h3 class="sth2"> Tus productos </h3>
@@ -55,13 +55,13 @@
                     <label class="precio">$ {{listaproducto.precio*listaproducto.cantidad}}</label>   
                 </div>
                 <div class="diveliminar">
-                    <a class="button2 special2 btneliminar" (click)="eliminar_producto(listaproducto.producto)"><i class="fa fa-trash"></i></a>   
+                    <a class="button2 special2 btneliminar" (click)="eliminar_producto(listaproducto)"><i class="fa fa-trash"></i></a>   
                 </div>
                 
    
             </div>
         </div>
-        <a class="button2 special2 btn-cancel-prod" (click)="bebidas()"  > cancelar</a>
+        <a class="button2 special2 btn-cancel-prod" (click)="cancelar()"  > cancelar</a>
         <a class="button2 special2 btn-pay-prod" (click)="bebidas()"  > pagar</a>
 
 
