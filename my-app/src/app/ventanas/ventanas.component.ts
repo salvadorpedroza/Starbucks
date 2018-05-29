@@ -26,24 +26,9 @@ export class ventanasComponent implements OnInit {
   mostrar_leche = false;
   mostrar_extra = false;
   mostrar_crema = false;
-  origen_ventana = ""
   nbebidas=0;
-  producto = ""
-  dictionary = {
-      te:[
-
-
-      ],
-
-      cafe:[
-
-        
-      ],
-      frape:[
-
-        
-      ]
-  }
+  producto = {tipo: "", nombre:"", precio: 0, cantidad:1}
+  
 
   
   
@@ -53,14 +38,12 @@ export class ventanasComponent implements OnInit {
     this.images[0]= "../../assets/images/promo1.jpg";
     this.images[1]="../../assets/images/promo2.PNG";
     this.images[2]="../../assets/images/promo3.png";
-    this.dictionary[this.producto];
+
    }
 
   ngOnInit() {
   }
-cafe(){
-  this.producto="cafe";
-}
+  
   reset(){
     this.mostrar_promociones = false;
     this.mostrar_inicio = false;
@@ -106,7 +89,7 @@ cafe(){
   tees(){
     this.reset()
     this.mostrar_tees = true;
-    this.origen_ventana = "tees"
+    this.producto.tipo = "tees"
   }
   cafes(){
     this.reset()
@@ -150,21 +133,35 @@ cafe(){
   }
 
 
-  click(press: string){
-    if(press=="leche")
+  click(press: {destino:string,precio:number}){
+    this.producto.precio=press.precio;
+    if(press.destino=="leche")
       this.leche()
-    if(press=="seleccion")
+    if(press.destino=="seleccion")
       this.seleccion()
-    if(press=="leche")
+    if(press.destino=="leche")
       this.leche()
-    if(press=="vasos")
+    if(press.destino=="vasos")
       this.vasos()
-    if(press=="extra")
+    if(press.destino=="extra")
       this.extra()
-    if(press=="crema")
+    if(press.destino=="crema")
       this.crema()
-    if(press=="caja")
+    if(press.destino=="caja")
       this.caja()
   }
+
+  mentas(){
+    this.producto.nombre="mentas"
+    this.producto.precio= 39
+    this.producto.tipo="antojo"
+    this.caja();
+  }
+  metees(){
+    this.producto.nombre="Peach Green Tea Lemonade"
+    this.producto.tipo="tees"
+    this.vasos();
+  }
+
 
 }

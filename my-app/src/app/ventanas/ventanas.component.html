@@ -111,7 +111,7 @@
 
 <!--*************************************BEBIDAS***********************************************-->
 <div style="height:100%" [hidden]="!mostrar_bebidas">
-
+  
   <div class="headown">
       <div class="linea"></div>
       <img src="../../assets/images/sb.png"  class="logo">
@@ -324,7 +324,7 @@
 
         <div class="card__body">
           <img src="../../assets/images/otro.png" alt="Nike 19" class="card__image6 card__will-animate">
-          <a class="card__wish-list card__wish-list--solstice card__will-animate" (click)="vasos()">Elegir</a>
+          <a class="card__wish-list card__wish-list--solstice card__will-animate" (click)="metees()">Elegir</a>
 
           <span class="card__category card__will-animate"></span>
         </div>
@@ -498,7 +498,7 @@
 
         <div class="card__body">
           <img src="../../assets/images/mocha.png" alt="Nike 19" class="card__image9 card__will-animate">
-          <a class="card__wish-list card__wish-list--solstice card__will-animate" (click)="caja()">Elegir</a>
+          <a class="card__wish-list card__wish-list--solstice card__will-animate" (click)="vasos()">Elegir</a>
 
           <span class="card__category card__will-animate"></span>
         </div>
@@ -521,7 +521,7 @@
 
         <div class="card__body">
           <img src="../../assets/images/capuccino.png" alt="Nike Solstice" class="card__image10 card__will-animate">
-          <a class="card__wish-list card__wish-list--solstice card__will-animate" (click)="caja()">Elegir</a>
+          <a class="card__wish-list card__wish-list--solstice card__will-animate" (click)="vasos()">Elegir</a>
 
           <span class="card__category card__will-animate"></span>
         </div>
@@ -543,7 +543,7 @@
 
         <div class="card__body">
           <img src="../../assets/images/espresso.png" alt="Nike Huarache" class="card__image11 card__will-animate">
-          <a class="card__wish-list card__wish-list--solstice card__will-animate" (click)="caja()">Elegir</a>
+          <a class="card__wish-list card__wish-list--solstice card__will-animate" (click)="vasos()">Elegir</a>
         </div>
       </div> 
   </div>
@@ -750,12 +750,12 @@
           <span class="card__price card__will-animate"></span>
 
           <h1 class="card__title card__will-animate">Barra Saludable</h1>
-          <span class="card__subtitle card__will-animate"> Es una variante del café con leche. Como éste, suele llevar un tercio de expreso y dos tercios de leche vaporizada, pero se añade una parte de chocolate, normalmente en forma de jarabe de chocolate.</span>
+          <span class="card__subtitle card__will-animate">Nuestra barra de cereal permite disfrutar el delicioso sabor de la fruta asi como la seleccion de los mejores ingredientes naturales.</span>
 
         </div>
 
         <div class="card__body">
-          <img src="../../assets/images/barra.png" alt="Nike 19" class="card__image21 card__will-animate">
+          <img src="../../assets/images/barra.png" class="card__image21 card__will-animate">
           <a class="card__wish-list card__wish-list--solstice card__will-animate" (click)="caja()">Elegir</a>
 
           <span class="card__category card__will-animate"></span>
@@ -801,7 +801,7 @@
 
         <div class="card__body">
           <img src="../../assets/images/mentas.png" alt="Nike Huarache" class="card__image23 card__will-animate">
-          <a class="card__wish-list card__wish-list--solstice card__will-animate" (click)="caja()">Elegir</a>
+          <a class="card__wish-list card__wish-list--solstice card__will-animate" (click)="mentas()">Elegir</a>
         </div>
       </div> 
   </div>
@@ -809,7 +809,7 @@
 </div>
 
 <div  style="height:100%" [hidden]="!mostrar_vasos">
-  <app-preparacion [origen]="origen_ventana" (boton)="click($event)"></app-preparacion>
+  <app-preparacion [origen]="producto.tipo" (boton)="click($event)"></app-preparacion>
 </div>
 <div  style="height:100%" [hidden]="!mostrar_leche">
     <app-leche (boton)="click($event)" ></app-leche>
@@ -821,7 +821,7 @@
     <app-crema-batida (boton)="click($event)"></app-crema-batida>
   </div>
 <div  style="height:100%" [hidden]="!mostrar_caja">
-  <app-caja></app-caja>
+  <app-caja ></app-caja>
 </div>
 
 

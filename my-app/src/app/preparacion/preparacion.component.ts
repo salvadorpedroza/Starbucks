@@ -15,8 +15,9 @@ export class PreparacionComponent implements OnInit {
   menuItems : any[];
  @Output() boton = new EventEmitter();
  @Input() origen = "";
+ info={destino:"",precio:0}
   constructor() {
-    this.boton = new EventEmitter<string>();
+    this.boton = new EventEmitter<{}>();
     this.menuItems = [
       { path: '../../assets/images/chico.jpg', title: 'CORTO $20' },
       { path: '../../assets/images/mediano.jpg', title: 'ALTO $35' },
@@ -28,17 +29,19 @@ export class PreparacionComponent implements OnInit {
   }
   siguiente(){
     if (this.origen=="tees"){
-      this.boton.emit("caja");
+      this.info.destino="caja"
     }
     else
-      this.boton.emit("leche");
-    
+      this.info.destino="leche"
+    this.boton.emit(this.info);
   }
   regresar(){
-    this.boton.emit("seleccion");
+    this.info.destino="seleccion"
+    this.boton.emit(this.info);
   }
   seleccion(){
-    this.boton.emit("seleccion");
+    this.info.destino="seleccion"
+    this.boton.emit(this.info);
   }
 
   public vaso1(){
@@ -48,40 +51,45 @@ export class PreparacionComponent implements OnInit {
            { 
             $('.s1').css('border', '4px solid #023f26'); $('.s2').css('border', '0px'); $('.s3').css('border', '0px'); $('.s4').css('border', '0px');
             }
-        
+            this.info.precio=20;
   });
   }
 
   public vaso2(){
+    this.info.precio=35;
     $(document).ready(function() 
        { /* Cualquier funcionalidad que queramos agregar a la página por medio de jQuery, debe ser incluida cuando el documento está listo para recibir acciones que modifiquen el DOM de la página. */
           
            { 
              $('.s2').css('border', '4px solid #023f26'); $('.s1').css('border', '0px'); $('.s3').css('border', '0px'); $('.s4').css('border', '0px'); 
             }
+            
         
   });
   }
+  
   public vaso3(){
+    this.info.precio=49;
     $(document).ready(function() 
        { /* Cualquier funcionalidad que queramos agregar a la página por medio de jQuery, debe ser incluida cuando el documento está listo para recibir acciones que modifiquen el DOM de la página. */
           
            { 
              $('.s3').css('border', '4px solid #023f26'); $('.s1').css('border', '0px'); $('.s2').css('border', '0px'); $('.s4').css('border', '0px'); 
             }
-        
+           
   });
   }
   public vaso4(){
+    this.info.precio=59;
     $(document).ready(function() 
        { /* Cualquier funcionalidad que queramos agregar a la página por medio de jQuery, debe ser incluida cuando el documento está listo para recibir acciones que modifiquen el DOM de la página. */
           
            { 
              $('.s4').css('border', '4px solid #023f26'); $('.s1').css('border', '0px'); $('.s2').css('border', '0px'); $('.s3').css('border', '0px'); 
             }
-        
+            
   });
   }
-
+ 
 
 }

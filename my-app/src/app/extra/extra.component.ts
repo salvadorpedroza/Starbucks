@@ -1,5 +1,8 @@
 import { EventEmitter } from '@angular/core';
 import { Component, OnInit, Input, Output } from '@angular/core';
+declare var jQuery:any;
+declare var $:any;
+ 
 @Component({
   selector: 'app-extra',
   templateUrl: './extra.component.html',
@@ -11,24 +14,70 @@ export class ExtraComponent implements OnInit {
   constructor() {
     this.boton = new EventEmitter<string>();
     this.menuItems = [
-    { path: '../../assets/images/almendrapolvo.png', title: 'ALMENDRAS' },
-    { path: '../../assets/images/cocopolvo.png', title: 'COCO' },
-    { path: '../../assets/images/nuezpolvo.png', title: 'NUEZ' },
-    { path: '../../assets/images/chocolatepolvo.png', title: 'CHOCOLATE' }
+    { path: '../../assets/images/almendrapolvo.jpg', title: 'ALMENDRAS' },
+    { path: '../../assets/images/cocopolvo.jpg', title: 'COCO' },
+    { path: '../../assets/images/nuezpolvo.jpg', title: 'NUEZ' },
+    { path: '../../assets/images/chocolatepolvo.jpg', title: 'CHOCOLATE' }
   ] }
 
   ngOnInit() {
   }
+
   siguiente(){
     this.boton.emit("crema");
   }
+
   regresar(){
     this.boton.emit("leche");
   }
+
   seleccion(){
     this.boton.emit("seleccion");
   }
 
+
+  public ingre1(){
+    $(document).ready(function() 
+       { /* Cualquier funcionalidad que queramos agregar a la página por medio de jQuery, debe ser incluida cuando el documento está listo para recibir acciones que modifiquen el DOM de la página. */
+          
+           { 
+            $('.s1').css('border', '4px solid #023f26'); $('.s2').css('border', '0px'); $('.s3').css('border', '0px'); $('.s4').css('border', '0px');
+            }
+        
+  });
+  }
+
+  public ingre2(){
+    $(document).ready(function() 
+       { /* Cualquier funcionalidad que queramos agregar a la página por medio de jQuery, debe ser incluida cuando el documento está listo para recibir acciones que modifiquen el DOM de la página. */
+          
+           { 
+             $('.s2').css('border', '4px solid #023f26'); $('.s1').css('border', '0px'); $('.s3').css('border', '0px'); $('.s4').css('border', '0px'); 
+            }
+        
+  });
+  }
+  
+  public ingre3(){
+    $(document).ready(function() 
+       { /* Cualquier funcionalidad que queramos agregar a la página por medio de jQuery, debe ser incluida cuando el documento está listo para recibir acciones que modifiquen el DOM de la página. */
+          
+           { 
+             $('.s3').css('border', '4px solid #023f26'); $('.s1').css('border', '0px'); $('.s2').css('border', '0px'); $('.s4').css('border', '0px'); 
+            }
+        
+  });
+  }
+  public ingre4(){
+    $(document).ready(function() 
+       { /* Cualquier funcionalidad que queramos agregar a la página por medio de jQuery, debe ser incluida cuando el documento está listo para recibir acciones que modifiquen el DOM de la página. */
+          
+           { 
+             $('.s4').css('border', '4px solid #023f26'); $('.s1').css('border', '0px'); $('.s2').css('border', '0px'); $('.s3').css('border', '0px'); 
+            }
+        
+  });
+  }
 
 
 }
