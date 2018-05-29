@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-caja',
@@ -6,34 +6,46 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./caja.component.css']
 })
 export class CajaComponent implements OnInit {
-  menuItems: any[];
+ 
+  @Input() listaproductos: any[];//copia esta
+  nuevoproducto = {tipo: "", nombre:"", precio: 0, cantidad:1, tipoleche:""}//copia esta
   constructor() {
-    this.menuItems = [
-      {tipo: "", precio: 15, producto: 'Cafe Moka', cantidad :1 },
-      { tipo: "",precio: 25, producto: 'Tee Chia', cantidad: 2 },
-      { tipo: "",precio: 32, producto: 'Sandwich', cantidad: 3 },
-      { tipo: "",precio: 28, producto: 'Frape Chocolate', cantidad:1 }
-    ]
-     
+    
+    this.listaproductos = new Array<Object>();//copia esta
+  
    }
 
   ngOnInit() {
   }
 
   suma(producto:string){
-    for(var i=0; i<this.menuItems.length;i++){
-      if(this.menuItems[i].producto == producto){
-        this.menuItems[i].cantidad++;
+    for(var i=0; i<this.listaproductos.length;i++){
+      if(this.listaproductos[i].producto == producto){
+        this.listaproductos[i].cantidad++;
       }
     }
   }
 
   resta(producto:string){
-    for(var i=0; i<this.menuItems.length;i++){
-      if(this.menuItems[i].producto == producto){
-        this.menuItems[i].cantidad--;
+    for(var i=0; i<this.listaproductos.length;i++){
+      if(this.listaproductos[i].producto == producto){
+        this.listaproductos[i].cantidad--;
       }
     }
   }
+
+  nuevo_producto(){//copia esta
+    this.listaproductos.push(this.nuevoproducto);//copia esta
+  }//copia esta
+
+  eliminar_producto(producto:string){
+    for(var i=0; i<this.listaproductos.length;i++){
+      if(this.listaproductos[i].producto == producto){
+        delete this.listaproductos[i];
+      }
+    }
+
+  }
+
 
 }
