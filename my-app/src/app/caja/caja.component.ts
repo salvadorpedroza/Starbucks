@@ -13,7 +13,6 @@ export class CajaComponent implements OnInit {
   constructor() {
     //this.actuallista = new EventEmitter<[{}]>();
     this.boton = new EventEmitter<{}>();//copia esta
-
    }
 
   ngOnInit() {
@@ -52,6 +51,10 @@ export class CajaComponent implements OnInit {
   cancelar(){
    delete this.listaproductos; 
    this.boton.emit(this.info);
+  }
+
+  agregar_otro(){
+    this.boton.emit(this.info);
   }
 
 
