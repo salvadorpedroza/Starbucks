@@ -28,7 +28,10 @@ export class ventanasComponent implements OnInit {
   mostrar_crema = false;
   nbebidas=0;
   producto = {tipo: "", nombre:"", precio: 0, cantidad:1, tipoleche:"", ingrediente:"", crema:""}
-  
+  listaproductos=new Array<{}>();
+
+
+
 
   
   
@@ -44,6 +47,10 @@ export class ventanasComponent implements OnInit {
   ngOnInit() {
   }
   
+  nuevo_producto(){
+    this.listaproductos.push(this.producto);
+  }
+
   reset(){
     this.mostrar_promociones = false;
     this.mostrar_inicio = false;
@@ -117,6 +124,7 @@ export class ventanasComponent implements OnInit {
     this.playAudio(1);
   }
   caja(){
+    this.nuevo_producto();
     this.reset()
     this.mostrar_caja = true;
   }
@@ -237,6 +245,25 @@ export class ventanasComponent implements OnInit {
     if(press.destino=="caja")
       this.caja()
   }
+  click5(press: {destino:string}){
+      
+    if(press.destino=="leche")
+      this.leche()
+    if(press.destino=="seleccion")
+      this.seleccion()
+    if(press.destino=="leche")
+      this.leche()
+    if(press.destino=="vasos")
+      this.vasos()
+    if(press.destino=="extra")
+      this.extra()
+    if(press.destino=="crema")
+      this.crema()
+    if(press.destino=="caja")
+      this.caja()
+  }
+
+
 
 
 
