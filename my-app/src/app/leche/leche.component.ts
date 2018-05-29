@@ -11,8 +11,10 @@ declare var $:any;
 export class LecheComponent implements OnInit {
 menuItems : any[];
 @Output() boton = new EventEmitter();
+@Input() origen = "";
+info={destino:"", tipoleche: ""}
   constructor() {
-    this.boton = new EventEmitter<string>();
+    this.boton = new EventEmitter<{}>();
     this.menuItems = [
     
     { path: '../../assets/images/santaclara.png', title: 'SANTA CLARA' },
@@ -24,16 +26,30 @@ menuItems : any[];
   ngOnInit() {
   }
   siguiente(){
-    this.boton.emit("extra");
+    this.info.destino="extra"
+    this.boton.emit(this.info);
+
+    $(document).ready(function() 
+       { /* Cualquier funcionalidad que queramos agregar a la página por medio de jQuery, debe ser incluida cuando el documento está listo para recibir acciones que modifiquen el DOM de la página. */
+          
+           { 
+             $('.s4').css('border', '0px'); $('.s1').css('border', '0px'); $('.s2').css('border', '0px'); $('.s3').css('border', '0px'); 
+            }
+        
+  });
+
   }
   regresar(){
-    this.boton.emit("vasos");
+    this.info.destino="vasos"
+    this.boton.emit(this.info);
   }
   seleccion(){
-    this.boton.emit("seleccion");
+    this.info.destino="seleccion"
+    this.boton.emit(this.info);
   }
 
   public leche1(){
+    this.info.tipoleche="SANTA CLARA";
     $(document).ready(function() 
        { /* Cualquier funcionalidad que queramos agregar a la página por medio de jQuery, debe ser incluida cuando el documento está listo para recibir acciones que modifiquen el DOM de la página. */
           
@@ -45,6 +61,7 @@ menuItems : any[];
   }
 
   public leche2(){
+    this.info.tipoleche="LALA";
     $(document).ready(function() 
        { /* Cualquier funcionalidad que queramos agregar a la página por medio de jQuery, debe ser incluida cuando el documento está listo para recibir acciones que modifiquen el DOM de la página. */
           
@@ -56,6 +73,7 @@ menuItems : any[];
   }
   
   public leche3(){
+    this.info.tipoleche="SELLO ROJO";
     $(document).ready(function() 
        { /* Cualquier funcionalidad que queramos agregar a la página por medio de jQuery, debe ser incluida cuando el documento está listo para recibir acciones que modifiquen el DOM de la página. */
           
@@ -66,6 +84,7 @@ menuItems : any[];
   });
   }
   public leche4(){
+    this.info.tipoleche="SAN MARCOS";
     $(document).ready(function() 
        { /* Cualquier funcionalidad que queramos agregar a la página por medio de jQuery, debe ser incluida cuando el documento está listo para recibir acciones que modifiquen el DOM de la página. */
           

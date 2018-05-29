@@ -27,7 +27,7 @@ export class ventanasComponent implements OnInit {
   mostrar_extra = false;
   mostrar_crema = false;
   nbebidas=0;
-  producto = {tipo: "", nombre:"", precio: 0, cantidad:1}
+  producto = {tipo: "", nombre:"", precio: 0, cantidad:1, tipoleche:""}
   
 
   
@@ -94,6 +94,7 @@ export class ventanasComponent implements OnInit {
   cafes(){
     this.reset()
     this.mostrar_cafes = true;
+    this.producto.tipo = "cafes"
   }
   frapes(){
     this.reset()
@@ -133,7 +134,7 @@ export class ventanasComponent implements OnInit {
   }
 
 
-  click(press: {destino:string,precio:number}){
+  click(press: {destino:string,precio:number,tipoleche:string}){
     this.producto.precio=press.precio;
     if(press.destino=="leche")
       this.leche()
@@ -150,6 +151,11 @@ export class ventanasComponent implements OnInit {
     if(press.destino=="caja")
       this.caja()
   }
+  click2(press: {tipoleche:string}){
+      
+    this.producto.tipoleche=press.tipoleche;
+  }
+
 
   mentas(){
     this.producto.nombre="mentas"
@@ -157,8 +163,23 @@ export class ventanasComponent implements OnInit {
     this.producto.tipo="antojo"
     this.caja();
   }
-  metees(){
+  metees1(){
     this.producto.nombre="Peach Green Tea Lemonade"
+    this.producto.tipo="tees"
+    this.vasos();
+  }
+  metees2(){
+    this.producto.nombre="Strawberry Green Tea Lemonade"
+    this.producto.tipo="tees"
+    this.vasos();
+  }
+  metees3(){
+    this.producto.nombre="Mint Blend"
+    this.producto.tipo="tees"
+    this.vasos();
+  }
+  mecafes1(){
+    this.producto.nombre="Mocha"
     this.producto.tipo="tees"
     this.vasos();
   }

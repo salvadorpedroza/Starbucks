@@ -5,7 +5,7 @@
       <label class="titulo">Starbucks </label>
       
     </div>
-<div class="card" style="height:90%; margin:0">
+<div class="card" style="height:87%; margin:0">
 <ngb-carousel *ngIf="images">
 <ng-template ngbSlide>
   <img [src]="images[0]" alt="Random first slide">
@@ -347,7 +347,7 @@
 
         <div class="card__body">
           <img src="../../assets/images/red.png" alt="Nike Solstice" class="card__image7 card__will-animate">
-          <a class="card__wish-list card__wish-list--solstice card__will-animate" (click)="vasos()">Elegir</a>
+          <a class="card__wish-list card__wish-list--solstice card__will-animate" (click)="metees2()">Elegir</a>
 
           <span class="card__category card__will-animate"></span>
         </div>
@@ -369,7 +369,7 @@
 
         <div class="card__body">
           <img src="../../assets/images/green.png" alt="Nike Huarache" class="card__image8 card__will-animate">
-          <a class="card__wish-list card__wish-list--solstice card__will-animate" (click)="vasos()">Elegir</a>
+          <a class="card__wish-list card__wish-list--solstice card__will-animate" (click)="metees3()">Elegir</a>
         </div>
       </div> 
   </div>
@@ -812,7 +812,7 @@
   <app-preparacion [origen]="producto.tipo" (boton)="click($event)"></app-preparacion>
 </div>
 <div  style="height:100%" [hidden]="!mostrar_leche">
-    <app-leche (boton)="click($event)" ></app-leche>
+    <app-leche (boton)="click($event)" (boton)="click2($event)" ></app-leche>
   </div>
   <div  style="height:100%" [hidden]="!mostrar_extra">
     <app-extra (boton)="click($event)" ></app-extra>
