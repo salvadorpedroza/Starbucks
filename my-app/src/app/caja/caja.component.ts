@@ -1,5 +1,6 @@
 import { Component, OnInit, Input,EventEmitter,Output } from '@angular/core';
-
+declare var jQuery:any;
+declare var $:any;
 @Component({
   selector: 'app-caja',
   templateUrl: './caja.component.html',
@@ -43,11 +44,20 @@ export class CajaComponent implements OnInit {
     }
   }
 
-  cancelar(){ 
-   this.listaproductos.splice(0,this.listaproductos.length);
-   this.boton.emit(this.info);
+
+  confirmar(){
+    $(document).ready(function()
+      {
+         $("#mostrarmodal6").modal("show");
+      });
   }
 
+  cancelar(){
+  
+   this.listaproductos.splice(0,this.listaproductos.length);
+   this.boton.emit(this.info);
+   
+  }
   agregar_otro(){
     this.boton.emit(this.info);
   }

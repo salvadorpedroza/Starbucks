@@ -5,6 +5,22 @@
       <label class="titulo">Starbucks </label>
       
     </div>
+    <div class="modal fade"  id="mostrarmodal6" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+        <div class="modal-dialog">
+           <div class="modal-content">
+              <div class="modal-header">
+             
+                 <h4 style="color:black; text-align: center;">Todos sus productos se elminaran    ¿esta seguro que desea continuar?</h4>
+          </div>
+              
+              <div class="modal-footer">
+             <a href="#" style="float: left;"data-dismiss="modal" class="button2 special2 ">Cancelar</a>
+             <a href="#" style="background: #ed4933;"data-dismiss="modal" class="button2 special2 "(click)="cancelar()">Aceptar</a>
+          </div>
+           </div>
+        </div>
+     </div>
+    
 
     <div class="divbody">
             
@@ -61,7 +77,7 @@
    
             </div>
         </div>
-        <a class="button2 special2 btn-cancel-prod" (click)="cancelar()"  > cancelar</a>
+        <a class="button2 special2 btn-cancel-prod" (click)="confirmar()"  > cancelar</a>
         <a class="button2 special2 btn-pay-prod" (click)="bebidas()"  > pagar</a>
 
 

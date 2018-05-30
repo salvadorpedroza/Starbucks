@@ -263,6 +263,8 @@ export class ventanasComponent implements OnInit {
       this.crema()
     if(press.destino=="caja")
       this.caja()
+    if(press.destino=="inicio")
+      this.inicio()
   }
 
 
@@ -288,7 +290,7 @@ export class ventanasComponent implements OnInit {
     this.caja();
   }
   desayuno1(){
-    this.producto.nombre="Croissant Jamón/Queso"
+    this.producto.nombre="Croissant J/Q"
     this.producto.precio= 69
     this.producto.tipo="desayuno"
     this.caja();
