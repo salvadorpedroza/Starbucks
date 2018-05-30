@@ -3,7 +3,6 @@
       <div class="linea"></div>
       <img src="../../assets/images/sb.png"  class="logo">
       <label class="titulo">Starbucks </label>
-      
     </div>
     <div class="modal fade"  id="mostrarmodal6" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
         <div class="modal-dialog">
@@ -23,6 +22,54 @@
     
 
     <div class="divbody">
+            <div class="modal fade divpagar"  id="mostrarmodal8" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+                    <div class="modal-dialog" style="  width:95%; margin-left: 0; height: 90%;">
+                            <div class="modal-content" style="  width:100%; height: 90%;">
+                               <div class="modal-header" style="height: 90%">
+                              
+                                  <h2 style="color:black; text-align: center;">Elige una opcion</h2>
+                           </div>
+                           <div class="productotitulo" >
+                                <div class="pnametitulo"><span class="spanproducto">Producto</span></div>
+                                <div class="divtitulocantidad" style="margin-right:5%">
+                                    <span style="margin-left: 3%;" class="spanproducto">Precio Unitario</span>   
+                                </div>
+                        
+                                <div class="divtitulocantidad">
+                                    <span class="spanproducto">Cantidad</span>    
+                                </div>
+                                <div class="divtitulocantidad2">
+                                    <span style="margin-left: 3%;" class="spanproducto">Precio</span>   
+                                </div>
+                                <div class="divtitulocantidad">
+                                    <span style="margin-left: 3%;" class="spanproducto">Eliminar Producto</span>   
+                                </div>
+                    
+                        </div>
+                           <div *ngFor="let listaproducto of listaproductos" class="producto" >
+                                <div class="pname"><span class="spanproducto">{{listaproducto.nombre}}</span></div>
+                                <div class="divcantidad" style="margin-right:2%">
+                                     
+                                </div>
+                     
+                                <div class="divcantidad">
+                                  <a class="button2 special2 btnmenos" style="color:white;background:white" (click)="resta(listaproducto)">-</a>
+                                  <label class="inputcantidad">{{listaproducto.cantidad}}</label>   
+                                  <a class="button2 special2 btnmas" style="color:white;background:white" (click)="suma(listaproducto)">+</a>      
+                                </div>
+                                <div class="divcantidad2">
+                                    <label class="precio">$ {{listaproducto.precio*listaproducto.cantidad}}</label>   
+                                </div>
+                                
+                            </div> 
+                               
+                              <a href="#" data-dismiss="modal" style="    position: absolute;
+                              bottom: 90px;
+                              left: 1000px;" class="button2 special2 ">Aceptar</a>
+                           
+                            </div>
+                         </div>
+            </div>
             
         <div class="items">
           <div class="divupselect">
@@ -77,8 +124,10 @@
    
             </div>
         </div>
+
         <a class="button2 special2 btn-cancel-prod" (click)="confirmar()"  > cancelar</a>
-        <a class="button2 special2 btn-pay-prod" (click)="bebidas()"  > pagar</a>
+        <a class="button2 special2 btn-pay-prod" (click)="pagar()"  > pagar</a>
+
 
 
 

@@ -7,6 +7,7 @@ declare var $:any;
   styleUrls: ['./caja.component.css'],
 })
 export class CajaComponent implements OnInit {
+  
   @Output() boton = new EventEmitter();
   @Input() listaproductos: any[];//copia esta
   info={destino:"seleccion"}
@@ -53,9 +54,9 @@ export class CajaComponent implements OnInit {
   }
 
   cancelar(){
-  
-   this.listaproductos.splice(0,this.listaproductos.length);
-   this.boton.emit(this.info);
+    this.listaproductos.splice(0,this.listaproductos.length);
+    this.info.destino="inicio";
+    this.boton.emit(this.info);
    
   }
   agregar_otro(){
@@ -63,4 +64,10 @@ export class CajaComponent implements OnInit {
   }
 
 
+  pagar(){
+    $(document).ready(function()
+    {
+       $("#mostrarmodal8").modal("show");
+    });
+  }
 }
