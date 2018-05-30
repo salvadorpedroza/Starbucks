@@ -1,11 +1,13 @@
 import { Component, OnInit, Input,EventEmitter,Output } from '@angular/core';
-
+declare var jQuery:any;
+declare var $:any;
 @Component({
   selector: 'app-caja',
   templateUrl: './caja.component.html',
   styleUrls: ['./caja.component.css'],
 })
 export class CajaComponent implements OnInit {
+  
   @Output() boton = new EventEmitter();
   @Input() listaproductos: any[];//copia esta
   info={destino:"seleccion"}
@@ -43,8 +45,9 @@ export class CajaComponent implements OnInit {
     }
   }
 
-  cancelar(){ 
+  cancelar(){
    this.listaproductos.splice(0,this.listaproductos.length);
+   this.info.destino="inicio";
    this.boton.emit(this.info);
   }
 
@@ -53,4 +56,10 @@ export class CajaComponent implements OnInit {
   }
 
 
+  pagar(){
+    $(document).ready(function()
+    {
+       $("#mostrarmodal8").modal("show");
+    });
+  }
 }
