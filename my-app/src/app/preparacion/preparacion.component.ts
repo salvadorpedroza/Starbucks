@@ -67,11 +67,22 @@ export class PreparacionComponent implements OnInit {
 });
     this.info.destino="seleccion"
     this.boton.emit(this.info);
-
+    
   }
   seleccion(){
     this.info.destino="seleccion"
     this.boton.emit(this.info);
+    $(document).ready(function() 
+    { /* Cualquier funcionalidad que queramos agregar a la página por medio de jQuery, debe ser incluida cuando el documento está listo para recibir acciones que modifiquen el DOM de la página. */
+       
+        { 
+          $('.s4').css('border', '0px'); $('.s1').css('border', '0px'); $('.s2').css('border', '0px'); $('.s3').css('border', '0px'); 
+         }
+     
+});
+
+
+    
   }
 
   public vaso1(){
@@ -85,6 +96,8 @@ export class PreparacionComponent implements OnInit {
             }
            
   });
+
+  
   }
 
   public vaso2(){
@@ -99,6 +112,9 @@ export class PreparacionComponent implements OnInit {
             
         
   });
+
+  
+ 
   }
   
   public vaso3(){
@@ -124,6 +140,8 @@ export class PreparacionComponent implements OnInit {
             }
             
   });
+
+  
   }
   
 
