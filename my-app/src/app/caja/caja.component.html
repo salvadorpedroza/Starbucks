@@ -23,11 +23,11 @@
 
     <div class="divbody">
             <div class="modal fade divpagar"  id="mostrarmodal8" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-                    <div class="modal-dialog" style="  width:95%; margin-left: 0; height: 90%;">
+                    <div class="modal-dialog" style="  width:95%; margin-left:2%; margin-top:5%; margin-right:0;margin-bottom:0; height: 90%;">
                             <div class="modal-content" style="  width:100%; height: 90%;">
-                               <div class="modal-header" style="height: 90%">
+                               <div class="modal-header" style="height: 15%">
                               
-                                  <h2 style="color:black; text-align: center;">Elige una opcion</h2>
+                                  <h2 style="color:black; text-align: center;">Ticket de compra</h2>
                            </div>
                            <div class="productotitulo" >
                                 <div class="pnametitulo"><span class="spanproducto">Producto</span></div>
@@ -39,17 +39,17 @@
                                     <span class="spanproducto">Cantidad</span>    
                                 </div>
                                 <div class="divtitulocantidad2">
-                                    <span style="margin-left: 3%;" class="spanproducto">Precio</span>   
+                                    <span style="margin-left: 3%;" class="spanproducto">Importe</span>   
                                 </div>
-                                <div class="divtitulocantidad">
-                                    <span style="margin-left: 3%;" class="spanproducto">Eliminar Producto</span>   
+                                <div class="divtotal">
+                                    <span style="margin-left: 3%;" class="spantotal">Total: ${{total}}</span>   
                                 </div>
-                    
+                                
                         </div>
                            <div *ngFor="let listaproducto of listaproductos" class="producto" >
                                 <div class="pname"><span class="spanproducto">{{listaproducto.nombre}}</span></div>
                                 <div class="divcantidad" style="margin-right:2%">
-                                     
+                                    <label class="precio">$ {{listaproducto.precio}}</label>  
                                 </div>
                      
                                 <div class="divcantidad">
@@ -62,10 +62,15 @@
                                 </div>
                                 
                             </div> 
-                               
+                            <!--
+                            <div class="total">
+                                <div class="divtotal">
+                                    <span style="margin-left: 3%;" class="spantotal">Total: {{total}}</span>   
+                                </div>
+                            </div>-->
                               <a href="#" data-dismiss="modal" style="    position: absolute;
-                              bottom: 90px;
-                              left: 1000px;" class="button2 special2 ">Aceptar</a>
+                              bottom: 20px;
+                              left: 1000px;" class="button2 special2 " (click)="cancelar()" >Aceptar</a>
                            
                             </div>
                          </div>
@@ -96,7 +101,7 @@
                         <span class="spanproducto">Cantidad</span>    
                     </div>
                     <div class="divtitulocantidad2">
-                        <span style="margin-left: 3%;" class="spanproducto">Precio</span>   
+                        <span style="margin-left: 3%;" class="spanproducto">Importe</span>   
                     </div>
                     <div class="divtitulocantidad">
                         <span style="margin-left: 3%;" class="spanproducto">Eliminar Producto</span>   
@@ -134,5 +139,19 @@
         </div>
 
       </div>
+      <div class="modal fade"  id="mostrarmodal10" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+        <div class="modal-dialog">
+           <div class="modal-content">
+              <div class="modal-header">
+             
+                 <h2 style="color:black; text-align: center;">Elige al menos un producto</h2>
+          </div>
+              
+              <div class="modal-footer">
+             <a href="#" data-dismiss="modal" class="button2 special2 ">Cerrar</a>
+          </div>
+           </div>
+        </div>
+     </div>
 
 </div>        

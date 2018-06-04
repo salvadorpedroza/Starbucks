@@ -11,6 +11,7 @@ export class CajaComponent implements OnInit {
   @Output() boton = new EventEmitter();
   @Input() listaproductos: any[];//copia esta
   info={destino:"seleccion"}
+  total=0
   constructor() {
     //this.actuallista = new EventEmitter<[{}]>();
     this.boton = new EventEmitter<{}>();//copia esta
@@ -57,17 +58,37 @@ export class CajaComponent implements OnInit {
     this.listaproductos.splice(0,this.listaproductos.length);
     this.info.destino="inicio";
     this.boton.emit(this.info);
-   
   }
+
   agregar_otro(){
+    this.info.destino="seleccion";
     this.boton.emit(this.info);
   }
 
 
   pagar(){
-    $(document).ready(function()
-    {
-       $("#mostrarmodal8").modal("show");
-    });
+    if(this.listaproductos != undefined){
+      if(this.listaproductos.length>0){
+        this.total=0;
+        for(var i=0; i<this.listaproductos.length;i++){
+            this.total = this.total + this.listaproductos[i].precio*this.listaproductos[i].cantidad;
+        }
+
+        $(document).ready(function()
+        {
+          $("#mostrarmodal8").modal("show");
+        });
+      }else{
+        $(document).ready(function()
+        {
+          $("#mostrarmodal10").modal("show");
+        });
+      }
+    }else{
+      $(document).ready(function()
+      {
+         $("#mostrarmodal10").modal("show");
+      });
+    }
   }
 }

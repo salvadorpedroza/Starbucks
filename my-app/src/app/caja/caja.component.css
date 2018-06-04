@@ -250,3 +250,39 @@
     margin-left: 0;
     width: 100%;
  }
+
+ .claseboto{
+     background: #ed4933;
+ }
+ .claseboto:hover{
+    background: #05681b;
+}
+
+.divtotal{
+    margin-top: .1%;
+    height: 96%;
+    width: 15%;
+    float: right;
+}
+
+.spantotal{
+    color:black; 
+    text-align: center; 
+    font-family:sans-serif; 
+    font-weight: bold;
+    color: #023f26;
+    margin-left: 2em;
+    margin-top:1em;
+}
+
+.total{
+    background: white;
+    border-radius: 8px;
+    border: 2px solid whitesmoke;;
+    margin-left: 2%;
+    /* margin-right: 2%; */
+    height: 2em;
+    box-shadow: 1px 1px 3px 1px #bbb;
+    margin-top: .5em;
+    width: 96%;
+}
