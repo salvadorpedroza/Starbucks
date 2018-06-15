@@ -1,4 +1,5 @@
 import { Component, OnInit, Input,EventEmitter,Output } from '@angular/core';
+import { MongoService } from '../services/mongo.service';
 declare var jQuery:any;
 declare var $:any;
 @Component({
@@ -12,7 +13,7 @@ export class CajaComponent implements OnInit {
   @Input() listaproductos: any[];//copia esta
   info={destino:"seleccion"}
   total=0
-  constructor() {
+  constructor(private service: MongoService) {
     //this.actuallista = new EventEmitter<[{}]>();
     this.boton = new EventEmitter<{}>();//copia esta
    }
@@ -70,12 +71,14 @@ export class CajaComponent implements OnInit {
     if(this.listaproductos != undefined){
       if(this.listaproductos.length>0){
         this.total=0;
+        this.service.update(this.listaproductos);
         for(var i=0; i<this.listaproductos.length;i++){
             this.total = this.total + this.listaproductos[i].precio*this.listaproductos[i].cantidad;
         }
 
         $(document).ready(function()
         {
+          
           $("#mostrarmodal8").modal("show");
         });
       }else{

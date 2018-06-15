@@ -27,7 +27,7 @@ export class ventanasComponent implements OnInit {
   mostrar_extra = false;
   mostrar_crema = false;
   nbebidas=0;
-  producto = {tipo: "", nombre:"", precio: 0, cantidad:1, tipoleche:"", ingrediente:"", crema:""}
+  producto = {tipo: "", nombre:"", precio: 0, cantidad:1, tipoleche:"", ingrediente:"", crema:"", id:""}
   listaproductos=new Array<{}>();
 
 
@@ -41,7 +41,6 @@ export class ventanasComponent implements OnInit {
     this.images[0]= "../../assets/images/promo1.jpg";
     this.images[1]="../../assets/images/promo2.PNG";
     this.images[2]="../../assets/images/promo3.png";
-
    }
 
   ngOnInit() {
@@ -50,7 +49,7 @@ export class ventanasComponent implements OnInit {
   nuevo_producto(){
     this.listaproductos.push(this.producto);
     delete this.producto;
-    this.producto = {tipo: "", nombre:"", precio: 0, cantidad:1, tipoleche:"", ingrediente:"", crema:""};
+    this.producto = {tipo: "", nombre:"", precio: 0, cantidad:1, tipoleche:"", ingrediente:"", crema:"",id:""};
   }
 
   reset(){
@@ -272,54 +271,63 @@ export class ventanasComponent implements OnInit {
 
 
   mentas(){
+    this.producto.id="mentas"
     this.producto.nombre="Mentas"
     this.producto.precio= 29
     this.producto.tipo="antojo"
     this.caja();
   }
   barra(){
+    this.producto.id="barra"
     this.producto.nombre="B. saludable"
     this.producto.precio= 39
     this.producto.tipo="antojo"
     this.caja();
   }
   galleta(){
+    this.producto.id="galleta"
     this.producto.nombre="Galleta S. Free"
     this.producto.precio= 49
     this.producto.tipo="antojo"
     this.caja();
   }
   desayuno1(){
+    this.producto.id="croissant"
     this.producto.nombre="Croissant J/Q"
     this.producto.precio= 69
     this.producto.tipo="desayuno"
     this.caja();
   }
   desayuno2(){
+    this.producto.id="panini1"
     this.producto.nombre="Panini T. Quesos"
     this.producto.precio= 69
     this.producto.tipo="desayuno"
     this.caja();
   }
   desayuno3(){
+    this.producto.id="panini2"
     this.producto.nombre="Panini M/Tomato"
     this.producto.precio= 69
     this.producto.tipo="desayuno"
     this.caja();
   }
   panaderia1(){
+    this.producto.id="panelote"
     this.producto.nombre="Pan de elote"
     this.producto.precio= 45
     this.producto.tipo="panaderia"
     this.caja();
   }
   panaderia2(){
+    this.producto.id="dona"
     this.producto.nombre="Dona de Chocolate"
     this.producto.precio= 39
     this.producto.tipo="panaderia"
     this.caja();
   }
   panaderia3(){
+    this.producto.id="rollocanela"
     this.producto.nombre="Rollo De Canela"
     this.producto.precio= 49
     this.producto.tipo="panaderia"
@@ -327,46 +335,55 @@ export class ventanasComponent implements OnInit {
   }
 
   metees1(){
+    this.producto.id="telemon1"
     this.producto.nombre="P. G. Tea Lemonade"
     this.producto.tipo="tees"
     this.vasos();
   }
   metees2(){
+    this.producto.id="telemon2"
     this.producto.nombre="S. G. Tea Lemonade"
     this.producto.tipo="tees"
     this.vasos();
   }
   metees3(){
+    this.producto.id="mintblend"
     this.producto.nombre="Mint Blend"
     this.producto.tipo="tees"
     this.vasos();
   }
   mecafes1(){
+    this.producto.id="mocha"
     this.producto.nombre="Mocha"
     this.producto.tipo="cafes"
     this.vasos();
   }
   mecafes2(){
+    this.producto.id="cappuccino"
     this.producto.nombre="Cappuccino"
     this.producto.tipo="cafes"
     this.vasos();
   }
   mecafes3(){
+    this.producto.id="espresso"
     this.producto.nombre="Espresso"
     this.producto.tipo="cafes"
     this.vasos();
   }
   mefrapes1(){
+    this.producto.id="cafe"
     this.producto.nombre="Cafe"
     this.producto.tipo="Frapes"
     this.vasos();
   }
   mefrapes2(){
+    this.producto.id="cajeta"
     this.producto.nombre="Cajeta"
     this.producto.tipo="Frapes"
     this.vasos();
   }
   mefrapes3(){
+    this.producto.id="chip"
     this.producto.nombre="Chip"
     this.producto.tipo="Frapes"
     this.vasos();
