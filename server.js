@@ -11,7 +11,7 @@ const port = 3015;
 //const yammerController = require("./controllers/yammer-controller");
 const twitterController = require("./controllers/controller");
 
-var url = 'mongodb://172.16.104.163:27019';
+var url = 'mongodb://172.16.104.144:27017';//'mongodb://192.168.1.88:27017';
 
 
 MongoClient.connect(url,{ useNewUrlParser: true }, function(err, db) {

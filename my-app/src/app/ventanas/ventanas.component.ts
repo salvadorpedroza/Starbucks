@@ -3,6 +3,8 @@ import {NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
 //import {NgbCarousel} from '@ng-bootstrap/ng-bootstrap';
 //import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { PreparacionComponent } from '../preparacion/preparacion.component';
+declare var jQuery:any;
+declare var $:any;
 @Component({
   selector: 'app-ventanas',
   templateUrl: './ventanas.component.html',
@@ -71,8 +73,16 @@ export class ventanasComponent implements OnInit {
     this.mostrar_crema = false;
   }
   inicio(){
+    this.listaproductos.splice(0,this.listaproductos.length);
     this.reset()
     this.mostrar_inicio = true;
+  }
+
+  regresar(){
+    $(document).ready(function()
+      {
+         $("#mostrarmodal23").modal("show");
+    });
   }
 
   seleccion(){
